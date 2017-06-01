@@ -5,3 +5,6 @@ $ [ main_thread ] - Nada en cola, esperando al stream...
 $ [ productor_thread ] - Se concretó la creación del kiwi. Nodos: 1
 $ [ consume_uids ] - Inciando procesamiento: -KlREhWLsydq-Gz04wLb. - [2017/05/30 - 19:04:02]
 $ [ consume_uids ] - Actualizacion de -KlREhWLsydq-Gz04wLb. Procesamiento de 0 audios. - [2017/05/30 - 19:04:02]. Resultado : 
+$ [ productor_thread ] - Se concretó la creación del kiwi. Nodos: 1
+$ [ consume_uids ] - Inciando procesamiento: -KlRuVDRti268pRiKysf. - [2017/05/30 - 22:10:58]
+$ [ consume_uids ] - Actualizacion de -KlRuVDRti268pRiKysf. Procesamiento de 0 audios. - [2017/05/30 - 22:10:59]. Resultado : 
