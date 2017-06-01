@@ -2,7 +2,7 @@
 
 **Positive Compliance LLC**
 
-**Author:** Dante Bazaldua [danteese](https://github.com/danteese)
+**Author:** Dante Bazaldua - [danteese](https://github.com/danteese)
 
 *Release:* 1.0
 
@@ -11,7 +11,7 @@ This service was created in order to tackle the problems the organization had pr
 Architecture
 ------------
 
-This is the file tree: (_/home/devroot/new_cloud/cloud_)
+This is the directory tree: (_/home/devroot/new_cloud/cloud_)
 ```
 cloud
 │   README.md   -> Description of system (you're actually reading it)
@@ -36,3 +36,10 @@ The first thing we have to make sense is how to start and stop the service.
 **In order to start:** `python cloud.py`
 
 **Turn off:** `bash killcloud.sh` _Be specially careful with this file_, the functionallity is explained later.
+
+There are other important thins when you start the service, for example with `ps -e` you might see something like this:
+
+```bash
+ #PID ?        00:00:00 python
+ ```
+This can show you that the service provided by **python** has the PID(Process ID) of #something.
