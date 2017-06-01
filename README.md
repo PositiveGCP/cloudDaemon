@@ -33,16 +33,21 @@ Principles
 
 The first thing we have to make sense is how to start and stop the service. 
 
-**In order to start:** `python cloud.py`
+**In order to start:** `$ python cloud.py` You should see something like this:
 
-**Turn off:** `bash killcloud.sh` _Be specially careful with this file_, the functionallity is explained later.
-
-There are other important things when you start the service, for example with `ps -e` you might see something like this:
+```bash
+Daemon Start - CLVA v0.4 Positive Compliance
+ ```
+**Verify daemon: ** When the service is running, for example with `$ ps -e` you might see something like this:
 
 ```bash
  #PID ?        00:00:00 python
  ```
 This shows you that the service provided by **python** has the PID(Process ID) of #something and it's working.
+
+**Turn off:** `bash killcloud.sh` _Be specially careful with this file_, the functionallity is explained later.
+
+* Another command you should try in orther to quit the daemon is: `$ pgrep python`, which will give you the PID of the daemon. Furthermore you shoudl type `$ kill -9 PID_THAT_PGREP_SHOW`
 
 Behavior
 --------
