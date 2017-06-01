@@ -4,6 +4,9 @@
 
 **Author:** Dante Bazaldua [danteese](https://github.com/danteese)
 
-*Release:* 0.5
+*Release:* 1.0
 
-This program was created in order to automatize the process between Firebase and the LVA process did by hand. 
+This service was created in order to tackle the problems the organization had processing audio files locally, and now that we have a cloud service this is the implementation. 
+
+Principles 
+==========
