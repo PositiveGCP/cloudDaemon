@@ -47,7 +47,7 @@ This shows you that the service provided by **python** has the PID(Process ID) o
 
 **Turn off:** `bash killcloud.sh` _Be specially careful with this file_, the functionallity is explained later.
 
-* Another command you should try in orther to quit the daemon is: `$ pgrep python`, which will give you the PID of the daemon. Furthermore you shoudl type `$ kill -9 PID_THAT_PGREP_SHOW`
+* (In case of non-functionality of the script above) Another command you should try in orther to quit the daemon is: `$ pgrep python`, which will give you the PID of the daemon. Furthermore you shoudl type `$ kill -9 PID_THAT_PGREP_SHOW`
 
 Behavior
 --------
