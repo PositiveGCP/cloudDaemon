@@ -37,9 +37,14 @@ The first thing we have to make sense is how to start and stop the service.
 
 **Turn off:** `bash killcloud.sh` _Be specially careful with this file_, the functionallity is explained later.
 
-There are other important thins when you start the service, for example with `ps -e` you might see something like this:
+There are other important things when you start the service, for example with `ps -e` you might see something like this:
 
 ```bash
  #PID ?        00:00:00 python
  ```
-This can show you that the service provided by **python** has the PID(Process ID) of #something.
+This shows you that the service provided by **python** has the PID(Process ID) of #something and it's working.
+
+Behavior
+--------
+
+The way the daemon was thought is the next: 
