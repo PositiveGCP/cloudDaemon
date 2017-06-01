@@ -31,4 +31,8 @@ cloud
 Principles 
 ----------
 
-The first thing we have to make sense is how to start and stop the service. **In order to start: ** `python cloud.py`
+The first thing we have to make sense is how to start and stop the service. 
+
+**In order to start:** `python cloud.py`
+
+**Turn off:** `bash killcloud.sh` _Be specially careful with this file_, the functionallity is explained later.
