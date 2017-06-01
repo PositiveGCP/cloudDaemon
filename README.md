@@ -38,7 +38,7 @@ The first thing we have to make sense is how to start and stop the service.
 ```bash
 Daemon Start - CLVA v0.4 Positive Compliance
  ```
-**Verify daemon: ** When the service is running, for example with `$ ps -e` you might see something like this:
+**Verify daemon:** When the service is running, for example with `$ ps -e` you might see something like this:
 
 ```bash
  #PID ?        00:00:00 python
