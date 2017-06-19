@@ -45,6 +45,9 @@ def sendmail( dictionary ):
     # Concat the new_sde
     new_sde = '|'.join( sde )
 
+    # Temporalmente solo lo mandará a info@positivecompliance.com
+    master_email = "info@positivecompliance.com"
+
     # dictionary
     d = {}
     d["nombre"] = name
