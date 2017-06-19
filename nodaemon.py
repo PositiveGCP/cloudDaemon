@@ -14,8 +14,6 @@ import threading
 import json # Guardar la informacion de manera correcta
 from daemonize import Daemonize # Daemon the service
 
-import mail as smail
-
 firebase = pyrebase.initialize_app( security.config ) # Inicializar firebase
 
 # ------------------------ FIREBASE -------------------------
@@ -227,15 +225,6 @@ def consume_uids( ):
 
             # ----- Actualizar la rama donde se encontraba la transaccion
             tnt.updateBranch( strres )
-            # Modificacion urgente para el mail TODO: optimizar
-            if strres is not "":
-                d = {}
-                d['id'] = str(item)
-                d['resume'] = strres
-                d['fecha'] = time.strftime('%Y/%m/%d - %H:%M:%S')
-                smail.sendmail( d )
-
-
             print "\t $ Rama actualizada: %s" %( item )
 
             msg = "Actualizacion de " + str(item)  + ". Procesamiento de " + str(len( audio_file.paths )) + " audios. - [" + time.strftime('%Y/%m/%d - %H:%M:%S') + "]. Resultado : " + strres

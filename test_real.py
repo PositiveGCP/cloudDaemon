@@ -18,21 +18,24 @@ def updateBranch():
     try:
         timex = time.localtime(time.time()) # Obtener el tiempo actual en el que se realiza la transaccion
         information = "0|0|0|0|0"
-        th = {}
+        tk = {}
+	th = {}
         # Cambiar los datos en la rama
-        th["date"] = "2017/05/25 - 04:39:15"
-        th["date_final"] = time.strftime( '%Y/%m/%d - %H:%M:%S', timex )
-        th["key_empresa"] = "-K_oamG1TExZkGP5Ed8g"
-        th["key_encuesta"] = "-KkWAzrRALxnAXZ9IigB"
-        th["key_persona"] = "-Kl0Y3VRJ5zmQSYiYCx_"
-        th["key_usuario"] = "6yfAI6VIXlRyHDlPaT54IuTXGOC2"
+        th["date"] = time.strftime( '%Y/%m/%d - %H:%M:%S', timex )
+        th["date_final"] = ""
+        th["key_empresa"] = "-KlKS5RXVIJYebHgUKLz"
+        th["key_encuesta"] = "-KlMAzoLIWHZ05qQbHbB"
+        th["key_persona"] = "-KltKr-fCxXKca9TpF30"
+        th["key_usuario"] = "AEWnaIq1wvXEnWjP2HKd7ZUcSVz1"
         th["processed"] = False
-        th["resultado"] = information
+        th["resultado"] = ""
         th["status"] = "resultado"
         th["visto"] = False
         # print users
-        db.child("Transfer").push( th )
-
+	tk["-KlapjrQR2UBegXAA8-"] = th
+        # db.child("Transfer").push( th )
+	db.child("Transfer").child("-KltRe7LUbk-AO0QHZWZ").set(th)
+	print th
     except Exception as e:
     	print e
 
