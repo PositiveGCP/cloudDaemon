@@ -49,6 +49,8 @@ def _processFile( infile, outfile ):
                 break
             file.close()
 
+        print "Audio a procesar: %s" % ( audio )
+
         # Codificar la URL
         headers = {'Accept': 'application/json',
                'Content-Type':'application/json',
@@ -56,6 +58,8 @@ def _processFile( infile, outfile ):
                'N-MS-AUTHCB': SEC.N_MS_AUTHCB }
 
         url_encoded = encodeURL( audio )
+
+        print "Encoded: %s" % ( url_encoded )
 
         # print "URL_encoded de descarga: -> %s" %(url_encoded)
         # Truncate the string
