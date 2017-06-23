@@ -1,4 +1,5 @@
 #!/usr/bin/python
+# *- coding: utf-8 -*
 # Tests for the 4.2.4 version of cloud Nemesysco service
 # Dante Fernando Bazaldua Huerta
 # 23-Jun-2017

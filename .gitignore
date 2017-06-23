@@ -3,3 +3,4 @@ logsystem/
 transactions/
 env/
 .idea/
+*.pyc
