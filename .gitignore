@@ -4,3 +4,4 @@ transactions/
 env/
 .idea/
 *.pyc
+*.txt
