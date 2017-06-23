@@ -84,7 +84,7 @@ def main():
         print "Hacen falta argumentos."
     elif len( sys.argv ) is 3:
         print "Argumentos: %s, %s" % ( sys.argv[1], sys.argv[2] )
-        # _processFile( sys.argv[1], sys.argv[2] )
+        _processFile( sys.argv[1], sys.argv[2] )
 
 if __name__ == '__main__':
     main()
