@@ -80,7 +80,7 @@ def _processFile( infile, outfile ):
         print "Ocurrió excepcion en LvaProcess %s" %( str(e) )
 
 def main():
-    if len( sys.argv ) < 1:
+    if len( sys.argv ) <= 1:
         print "Hacen falta argumentos."
     elif len( sys.argv ) is 3:
         print "Argumentos: %s, %s" % ( sys.argv[1], sys.argv[2] )
