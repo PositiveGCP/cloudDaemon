@@ -119,6 +119,11 @@ class Firebase( object ):
                 if "date_final" in trans.val():
                     dfinal = trans.val()['date_final']
 
+                if "date" in trans.val():
+                    d = trans.val()['date']
+                else:
+                    trans.val()['date'] = "2017/12/06 - 12:00:00"
+
                 print "%20s | %10s | %30s | %30s" %( trans.key(), pro, trans.val()['date'], dfinal)
 
 
