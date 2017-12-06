@@ -57,7 +57,7 @@ def sendmail( dictionary ):
     d["id"] = dictionary["id"]
     d["master_acc"] = master_email
     # print d
-    url = "http://www.positivecompliance.com/mailDev/mailDante.php"
+    url = "http://www.positivecompliance.com/ServerMail/api.php"
     r = requests.post(url, data=json.dumps(d))
     print "Email sent - [ %s ]" % (str(r.status_code))
 
