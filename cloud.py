@@ -4,15 +4,15 @@
 # @brief: Daemon to query Firebase and process information using LVA-CLOUD
 # @date: 27th may, 2017
 
-import pyrebase # Conexión con firebase
-import keys as security # Librería que contiene la configuración de cuenta y de usuarios
+import pyrebase  # Conexión con firebase
+import keys as security  # Librería que contiene la configuración de cuenta y de usuarios
 import mainCLVA as bslogic
-import time # Tiempo de ejecución para logs
-import os, sys # Ocupar directorios
-import Queue # Creación de la lista de espera
+import time  # Tiempo de ejecución para logs
+import os,sys  # Ocupar directorios
+import Queue  # Creación de la lista de espera
 import threading
-import json # Guardar la informacion de manera correcta
-from daemonize import Daemonize # Daemon the service
+import json  # Guardar la informacion de manera correcta
+from daemonize import Daemonize  # Daemon the service
 
 import mail as smail
 
