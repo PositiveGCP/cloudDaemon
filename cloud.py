@@ -179,7 +179,7 @@ def consume_uids( ):
             tnt = bslogic.Transaction( str(item) ) # Crear objeto transaccion
             audio_file = bslogic.AudioFile( tnt.uid ) # Crear objeto de audio
 
-            msg = "Inciando procesamiento: " + str(item) + ". - [" + time.strftime('%Y/%m/%d - %H:%M:%S') + "]"
+            msg = "Iniciando procesamiento: " + str(item) + ". - [" + time.strftime('%Y/%m/%d - %H:%M:%S') + "]"
             system_log( task, msg )
 
             responseobj = []
@@ -193,7 +193,10 @@ def consume_uids( ):
             for element in audio_file.paths:
                 # A este punto se debió haber procesado cada uno de los audios
                 # print "\t $ Procesando: %s %s" %( element, time.strftime('%Y/%m/%d - %H:%M:%S') ),
-                voice = bslogic.LvaProcess( element, tnt.uid )
+                voice = bslogic.LvaProcess(element, tnt.uid)
+                # Añadido debido a la complejidad para ver que sucede durante el proceso
+                LVA_RESPONSE = voice._processFile()
+                system_log(task, LVA_RESPONSE)
                 # Agrear al objeto el json de respuesta y guardar en archivo de texto
                 partial = pathFinder( voice.response )
                 # Formato de impresión en tabla

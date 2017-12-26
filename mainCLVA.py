@@ -31,7 +31,7 @@ class LvaProcess( object ):
         self.response = ""
         self.response_text = ""
         self.status = ""
-        self._processFile()
+        # self._processFile()
 
     # Codifica la URL
     def encodeURL(self, urlin ):
@@ -84,6 +84,9 @@ class LvaProcess( object ):
             self.response = req.json()
             self.status = req.status_code
             self.response_text = req.text
+            rsp = "\t\t" + self.uid + " -> " + self.link + " [ "+ self.response_text +" ]"
+            return rsp
+            # print "\t\t %s -> %s [OK]" %(str(self.uid), str(self.link))
             # TODO: Guardar la respuesta en el archivo de texto
 
         except Exception as e:
