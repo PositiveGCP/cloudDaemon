@@ -196,9 +196,9 @@ def consume_uids( ):
                 voice = bslogic.LvaProcess(element, tnt.uid)
                 # Añadido debido a la complejidad para ver que sucede durante el proceso
                 LVA_RESPONSE = voice._processFile()
-                system_log(task, LVA_RESPONSE)
                 # Agrear al objeto el json de respuesta y guardar en archivo de texto
-                partial = pathFinder( voice.response )
+                partial = pathFinder(voice.response)
+                system_log(task, "RES: [ " + partial + " ]")
                 # Formato de impresión en tabla
                 print "%20s | %30s | %10s" %( element, time.strftime('%Y/%m/%d - %H:%M:%S'), partial)
                 # Guardar en el archivo de texto
