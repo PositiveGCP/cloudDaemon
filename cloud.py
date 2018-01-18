@@ -373,6 +373,7 @@ if __name__ == "__main__":
     log_file = create_logfile()  # System: Archivo donde guardar el log del sistema.
     os.system('clear')  # Clean screen
     print "%s\nAuthor: %s" %("Daemon Start - CLVA v0.4 Positive Compliance","Dante Fernando Bazaldua Huerta")
+    # In case of no daemon
     # main()
     myname=os.path.basename(sys.argv[0])
     pidfile='/tmp/%s' % myname       # any name
