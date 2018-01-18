@@ -5,6 +5,7 @@
 
 import click
 import os
+import subprocess
 CONFIG = {
     "DAEMON": False,
     "ENV": 'dev',
@@ -56,7 +57,8 @@ def start():
     Inicia el procesamiento.
     """
     cliPresent()
-    os.system("./pscloud.py")
+    # os.system("pscloud")
+    subprocess.Popen("./pscloud", shell=True)
 
 
 @cli.command()
@@ -64,7 +66,7 @@ def lastest():
     """
     Muestra lo último que hace el cloud.
     """
-    os.system("tail -f ./logsystem/$(ls | sort -V | tail -n 1)")
+    os.system("tail -f ./log/$(ls ./log | sort -V | tail -n 1)")
 
 
 @cli.command()
@@ -81,7 +83,7 @@ def kill():
     Destruye los procesos de cloud.
     """
     click.confirm('¿En verdad quieres detenerlo?', abort=True)
-    # os.system("kill -9 $(pgrep python)")
+    os.system("kill -9 $(pgrep python)")
 
 
 def cliPresent():

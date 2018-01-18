@@ -16,6 +16,7 @@ import os
 import Queue
 import threading
 import json
+import sys
 from daemonize import Daemonize  # Daemon the service
 
 firebase = pyrebase.initialize_app(security.config)  # Inicializar firebase
@@ -44,7 +45,7 @@ unp = []  # UIDS del kiwi
 
 def create_logfile():
     timestamp = str(int(time.time()))
-    log = os.path.join(main_path, 'logsystem/' + timestamp + ".txt")
+    log = os.path.join(main_path, 'log/' + timestamp + ".log")
     return log
 
 
@@ -59,7 +60,7 @@ def create_transfile(uid, type_f):
     elif type_f is "text":
         extension = ".txt"
 
-    log = os.path.join(main_path, 'transactions/' + new_uid[1] + extension)
+    log = os.path.join(main_path, 'tran/' + new_uid[1] + extension)
     return log
 
 
