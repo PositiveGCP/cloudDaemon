@@ -1,21 +1,22 @@
+#!/usr/bin/python
 # *- coding: utf-8 -*
 
 # @author: Dante bazaldua
 # @brief: Daemon to query Firebase and process information using LVA-CLOUD
 # @date: 27th may, 2017
 
+# Self libraries
+import lib.keys as security
+import lib.mainCLVA as bslogic
+import lib.mail as smail
+# External libraries
 import pyrebase  # Conexión con firebase
-# Librería que contiene la configuración de cuenta y de usuarios
-import keys as security
-import mainCLVA as bslogic
-import time  # Tiempo de ejecución para logs
-import os  # Ocupar directorios
-import Queue  # Creación de la lista de espera
+import time
+import os
+import Queue
 import threading
-import json  # Guardar la informacion de manera correcta
+import json
 from daemonize import Daemonize  # Daemon the service
-
-import mail as smail
 
 firebase = pyrebase.initialize_app(security.config)  # Inicializar firebase
 

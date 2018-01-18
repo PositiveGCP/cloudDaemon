@@ -6,7 +6,6 @@ import pyrebase
 import requests # Hacer query a CLVA-i
 import json
 import keys as security
-import time
 
 firebase = pyrebase.initialize_app( security.config ) # Inicializar firebase
 
