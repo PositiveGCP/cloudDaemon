@@ -6,6 +6,8 @@
 import click
 import os
 import subprocess
+import hashlib
+
 CONFIG = {
     "DAEMON": False,
     "ENV": 'dev',
@@ -84,6 +86,29 @@ def kill():
     """
     click.confirm('¿En verdad quieres detenerlo?', abort=True)
     os.system("kill -9 $(pgrep python)")
+
+
+@cli.command()
+@click.option('--key', '-k', type=(unicode), help='Buscar \
+archivo de procesamiento en carpeta tran y mostrarlo.', required=True)
+def find(key):
+    """
+    Encuentra el archivo de procesamiento de una key dada (Transfer).
+    """
+    try:
+        m = hashlib.md5()
+        m.update(key)
+        hashed = m.hexdigest()
+        if os.path.isfile('./tran/' + hashed + '.txt'):
+            print "¡Eureka!"
+            print "File: %s.txt" % (hashed)
+            print "----------------------------------------------------"
+            with open('./tran/' + hashed + '.txt', 'r') as f:
+                print f.read()
+        else:
+            print "Lo siento, no existe."
+    except Exception as e:
+        print str(e)
 
 
 def cliPresent():

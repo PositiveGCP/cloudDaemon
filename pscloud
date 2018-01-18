@@ -18,6 +18,7 @@ import threading
 import json
 import sys
 from daemonize import Daemonize  # Daemon the service
+import hashlib
 
 firebase = pyrebase.initialize_app(security.config)  # Inicializar firebase
 
@@ -53,14 +54,21 @@ def create_transfile(uid, type_f):
     """
     Regresa el nombre del archivo para la transaccion
     """
-    new_uid = uid.split('-')
+    # Changes for the md5 extension
+    m = hashlib.md5()
+    m.update(uid)
+    x = m.hexdigest()
+    # En caso de regresar al método anterior recordar new_uid[1]
+    # new_uid = uid.split
+    new_uid = x
+
     extension = ""
     if type_f is "json":
         extension = ".json"
     elif type_f is "text":
         extension = ".txt"
 
-    log = os.path.join(main_path, 'tran/' + new_uid[1] + extension)
+    log = os.path.join(main_path, 'tran/' + new_uid + extension)
     return log
 
 
