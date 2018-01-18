@@ -1,6 +1,6 @@
 # Ignore directories of processes and results
-logsystem/
-transactions/
+log/
+tran/
 venv/
 .idea/
 *.pyc

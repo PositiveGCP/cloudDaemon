@@ -6,9 +6,9 @@
 # @date: 27th may, 2017
 
 # Self libraries
-import lib.keys as security
-import lib.mainCLVA as bslogic
-import lib.mail as smail
+import keys as security
+import mainCLVA as bslogic
+import mail as smail
 # External libraries
 import pyrebase  # Conexión con firebase
 import time
