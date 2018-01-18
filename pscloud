@@ -124,6 +124,8 @@ class Firebase(object):
     def check_transactions(self):
         task = "check_transactions"
         transactions = db.child("Transfer").get()
+        # key_positive = '-KrY7N-UWdyyicyjAP36'
+        # transactions = db.child("Transfer").order_by_child("key_empresa").equal_to(key_positive).get()
         count = 0
         try:
             print "\n$ Transacciones actuales: "
