@@ -380,8 +380,8 @@ if __name__ == "__main__":
     os.system('clear')  # Clean screen
     print "%s\nAuthor: %s" %("Daemon Start - CLVA v0.4 Positive Compliance","Dante Fernando Bazaldua Huerta")
     # In case of no daemon
-    main()
-    # myname=os.path.basename(sys.argv[0])
-    # pidfile='/tmp/%s' % myname       # any name
-    # daemon = Daemonize(app=myname,pid=pidfile, action=main)
-    # daemon.start()
+    # main()
+    myname=os.path.basename(sys.argv[0])
+    pidfile='/tmp/%s' % myname       # any name
+    daemon = Daemonize(app=myname,pid=pidfile, action=main)
+    daemon.start()
