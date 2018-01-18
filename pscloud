@@ -73,12 +73,16 @@ def system_log(task, message):
 
 
 def transaction_log(filename, response, status, date):
+    print "transaction_log: -> %s" % (filename)
     msg = "[ " + status + " ] - " + response + "[ " + date + " ]"
     # print "%s" %(msg)
     # print filename
-    with open(filename, 'a') as out:
-        out.write(msg + "\n")
-        out.close()
+    try:
+        with open(filename, 'a') as out:
+            out.write(msg + "\n")
+            out.close()
+    except Exception as e:
+        print str(e)
 
 
 class SetQueue(Queue.Queue):
