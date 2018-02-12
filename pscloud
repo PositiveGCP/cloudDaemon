@@ -201,19 +201,23 @@ def pathFindera7(response):
     """
     RA7 pathfinder optimization
     """
-    poi = response['Data']['RISKREPQ'][0]
-    MAXVAL = 95
-    MINVAL = 5
-    risk = MINVAL
-    if len(poi) > 0:
-        temp = (str(poi)).split(';')
-        risk = int(temp[len(temp) - 1])
-        if risk >= 95:
-            risk = MAXVAL
-        if risk <= 5:
-            risk = MINVAL
-    else:
+    try:
+        poi = response['Data']['RISKREPQ'][0]
+        MAXVAL = 95
+        MINVAL = 5
         risk = MINVAL
+        if len(poi) > 0:
+            temp = (str(poi)).split(';')
+            risk = int(temp[len(temp) - 1])
+            if risk >= 95:
+                risk = MAXVAL
+            if risk <= 5:
+                risk = MINVAL
+        else:
+            risk = MINVAL
+    except Exception as e:
+        print str(e)
+        risk = 5
     return risk
 
 
@@ -281,10 +285,8 @@ def consume_uids():
                 # transaction_log(transactions_file, voice.response_text,
                 # str(voice.status), time.strftime('%Y/%m/%d - %H:%M:%S'))
                 results.append(voice.response)
-                print results
                 # Se guarda en el objeto las respuestas
                 responseobj.append(partial)
-                print results
 
             # Crear el string que se guarda en firebase res|res|res...
             strres = ""
