@@ -436,15 +436,16 @@ def cli(mode):
     """
     Manage cloudDaemon with daemon or verbosity mode.
     """
+    os.system("clear")
     if mode == "dev" or mode == "prod":
-        print "Or"
+        # print "Or"
         setupLog()
         printHeader()
     if mode == "dev":
-        print "Dev"
+        # print "Dev"
         main()
     elif mode == "prod":
-        print "Prod"
+        # print "Prod"
         setupLog()
         myname = os.path.basename(sys.argv[0])
         pidfile = '/tmp/%s' % myname       # any name
