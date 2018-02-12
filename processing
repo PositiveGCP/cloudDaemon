@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 # *- coding: utf-8 -*
 # @author: Positive Compliance / Dante Bazaldua
 # @brief: Shell for Cloud-processing application
@@ -60,7 +60,7 @@ def start():
     """
     cliPresent()
     # os.system("pscloud")
-    subprocess.Popen("python pscloud", shell=True)
+    subprocess.Popen("./pscloud --mode=prod", shell=True)
 
 
 @cli.command()
