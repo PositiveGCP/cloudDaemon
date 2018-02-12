@@ -77,7 +77,7 @@ def latest():
     """
     Muestra lo último que hace el cloud.
     """
-    os.system("tail -f ./log/$(ls ./log | sort -V | tail -n 1)")
+    os.system("tail -f log/$(ls ./log | sort -V | tail -n 1)")
 
 
 @cli.command()
@@ -85,7 +85,7 @@ def watch():
     """
     Muestra lo último que hace el cloud.
     """
-    os.system("less ./log/$(ls ./log | sort -V | tail -n 1)")
+    os.system("less log/$(ls ./log | sort -V | tail -n 1)")
 
 
 @cli.command()
