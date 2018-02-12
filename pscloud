@@ -350,11 +350,11 @@ def consume_uids(possible_id):
 
         if ST is False:
             print ("\t\t$ Finished --> %s [%s]") % (str(item), kiwi.qsize())
-
+            kiwi.task_done()
+        else:
+            break
         # print "\t ConsThread: terminó queue[current size = {0}] at time = {1}
         # ".format( kiwi.qsize(), time.strftime('%H:%M:%S'))
-
-            kiwi.task_done()
 
 
 def producer_uids(strkiwi):
