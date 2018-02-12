@@ -201,17 +201,19 @@ def pathFindera7(response):
     """
     RA7 pathfinder optimization
     """
-    poi = str(response['Data']['RISKREPQ'][0])
+    poi = response['Data']['RISKREPQ'][0]
     MAXVAL = 95
     MINVAL = 5
     risk = MINVAL
     if len(poi) > 0:
-        temp = poi.split(';')
+        temp = (str(poi)).split(';')
         risk = int(temp[len(temp) - 1])
         if risk >= 95:
             risk = MAXVAL
         if risk <= 5:
             risk = MINVAL
+    else:
+        risk = MINVAL
     return risk
 
 
