@@ -9,6 +9,7 @@
   "author": "Dante Bazaldua",
   "license": "ISC",
   "dependencies": {
-    "firebase-admin": "^5.8.2"
+    "firebase-admin": "^5.8.2",
+    "moment": "^2.20.1"
   }
 }

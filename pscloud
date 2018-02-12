@@ -30,7 +30,8 @@ user = auth.sign_in_with_email_and_password(security.email, security.passwd)
 storage = firebase.storage()  # Referencia al storage
 db = firebase.database()  # Referencia a la base de datos
 
-main_path = os.path.dirname(os.path.realpath('__file__'))
+# main_path = os.path.dirname(os.path.realpath('__file__'))
+main_path = os.path.dirname(os.path.realpath(__file__))
 
 # Archivos para logging
 log_file = ""
@@ -51,6 +52,7 @@ ST = False
 
 def create_logfile():
     timestamp = str(int(time.time()))
+    # C is the absolute path of the directory where the program resides.
     log = os.path.join(main_path, 'log/' + timestamp + ".log")
     return log
 
@@ -86,7 +88,7 @@ def system_log(task, message):
 
 
 def transaction_log(filename, response, status, date):
-    print "transaction_log: -> %s" % (filename)
+    # print "transaction_log: -> %s" % (filename)
     msg = "[ " + status + " ] - " + response + "[ " + date + " ]"
     # print "%s" %(msg)
     # print filename
@@ -232,7 +234,7 @@ def consume_uids(possible_id):
     """
     task = "consume_uids"
     while(True):
-        print "\t --> Thread waiting..."
+        # print "\t --> Thread waiting..."
         if ST is False:
             item = kiwi.get()
         else:
@@ -271,7 +273,7 @@ def consume_uids(possible_id):
             for element in audio_file.paths:
                 # A este punto se debió haber procesado cada uno de los audios
                 TM_init = time.strftime('%Y/%m/%d - %H:%M:%S')
-                print "\t $ Procesando: %s %s" % (element, TM_init),
+                # print "\t $ Procesando: %s %s" % (element, TM_init),
                 voice = bslogic.LvaProcess(element, tnt.uid)
                 # + por la complejidad para ver que sucede durante el proceso
                 LVA_RESPONSE = voice._processFile()
@@ -280,11 +282,13 @@ def consume_uids(possible_id):
                 partial = str(pathFindera7(voice.response))
                 # Last form of send
                 # partial = pathFinder(voice.response)
-                print "%s --> partial" % (partial)
-                system_log(task, "RES: [ " + partial + " ]")
-                # Formato de impresión en tabla
+                # print "%s --> partial" % (partial)
                 TM_end = time.strftime('%Y/%m/%d - %H:%M:%S')
-                print "%20s | %30s | %10s" % (element, TM_end, partial)
+                system_log(
+                    task,
+                    "result : " + element + " | " + TM_end + " | " + partial)
+                # Formato de impresión en tabla
+                # print "%20s | %30s | %10s" % (element, TM_end, partial)
                 # Guardar en el archivo de texto
                 t = transactions_file
                 v = voice.response_text
@@ -321,7 +325,7 @@ def consume_uids(possible_id):
             with open(transactions_file_json, 'w') as fp:
                 json.dump(result_data, fp, sort_keys=True, indent=4)
                 fp.close()
-            print "\t $ JSON guardado."
+            print "$ JSON guardado."
 
             # ----- Actualizar la rama donde se encontraba la transaccion
             tnt.updateBranch(strres)
@@ -333,7 +337,7 @@ def consume_uids(possible_id):
                 d['fecha'] = time.strftime('%Y/%m/%d - %H:%M:%S')
                 smail.sendmail(d)
 
-            print "\t $ Rama actualizada: %s" % (item)
+            print "$ Rama actualizada: %s" % (item)
             msg = (
                 "Actualizacion de "
                 + str(item) +
