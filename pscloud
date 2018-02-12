@@ -39,6 +39,10 @@ transactions_file = ""
 kiwi = Queue.Queue()  # Kiwi
 unp = []  # UIDS del kiwi
 
+
+# EMERGENCY
+ST = False
+
 # ------------------------ log system functions -------------------------
 # create_logfile, create_transfile, system_log, transaction_log permiten
 # interactuar con el sistema en cuanto a escritura de archivos
@@ -218,18 +222,21 @@ def pathFindera7(response):
     except Exception as e:
         print str(e)
         risk = 5
-        
+
     return (100 - risk)
 
 
-def consume_uids():
+def consume_uids(possible_id):
     """
     Consume lo que exista en el queue
     """
     task = "consume_uids"
     while(True):
         print "\t --> Thread waiting..."
-        item = kiwi.get()
+        if ST is False:
+            item = kiwi.get()
+        else:
+            item = possible_id
 
         # Clear objects
         tnt = None
@@ -341,11 +348,13 @@ def consume_uids():
         except Exception as err_processing:
             print "[PROBLEM]= proceso[%s]: %s" % (task, str(err_processing))
 
-        print ("\t\t$ Finished --> %s [%s]") % (str(item), kiwi.qsize())
+        if ST is False:
+            print ("\t\t$ Finished --> %s [%s]") % (str(item), kiwi.qsize())
 
         # print "\t ConsThread: terminó queue[current size = {0}] at time = {1}
         # ".format( kiwi.qsize(), time.strftime('%H:%M:%S'))
-        kiwi.task_done()
+
+            kiwi.task_done()
 
 
 def producer_uids(strkiwi):
@@ -417,13 +426,20 @@ def main():
     # Comenzar con el consumo de los nodos del queue
     threads_num = 1  # Solo dos threads de consumo
     for i in range(threads_num):
-        t1 = threading.Thread(name = "Consumidor_de_uids -" + str(i), target=consume_uids, args=())
+        t1 = threading.Thread(
+            name="Consumidor_de_uids -" + str(i),
+            target=consume_uids,
+            args=('',))
         t1.start()
 
     # Crear el kiwi de procesamiento
     if len(unp) is not 0:
         # Es decir que si hay encuestas sin procesar
-        t2 = threading.Thread(name = "ProducerThread", target=producer_uids, args=(unp,))
+        t2 = threading.Thread(
+            name="ProducerThread",
+            target=producer_uids,
+            args=(unp,)
+            )
         t2.start()
 
     else:
@@ -437,9 +453,12 @@ def main():
 
 
 @click.command()
-@click.option('--mode', '-d', help='Executes \
+@click.option('--mode', '-d', required=True, help='Executes \
 in mode <dev|prod>')
-def cli(mode):
+@click.option('--single', '-s', is_flag=True, default=False, help='Execute \
+single transaction')
+@click.argument('id', nargs=1)
+def cli(mode, single, id):
     """
     Manage cloudDaemon with daemon or verbosity mode.
     """
@@ -450,18 +469,29 @@ def cli(mode):
         printHeader()
     if mode == "dev":
         # print "Dev"
-        main()
+        if single is False:
+            main()
+        else:
+            global ST
+            ST = True
+            processOne(id)
     elif mode == "prod":
         # print "Prod"
         setupLog()
-        myname = os.path.basename(sys.argv[0])
-        pidfile = '/tmp/%s' % myname       # any name
-        daemon = Daemonize(app=myname, pid=pidfile, action=main)
-        daemon.start()
+        if single is False:
+            myname = os.path.basename(sys.argv[0])
+            pidfile = '/tmp/%s' % myname       # any name
+            daemon = Daemonize(app=myname, pid=pidfile, action=main)
+            daemon.start()
     else:
         printHeader()
         print "Bad usage:"
         print "See ./pscloud -h|--help"
+
+
+def processOne(id):
+    consume_uids('-' + id)
+    print ("\t\t$ Finished --> %s") % (str(id))
 
 
 def setupLog():
