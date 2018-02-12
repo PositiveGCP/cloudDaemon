@@ -218,7 +218,7 @@ def pathFindera7(response):
     except Exception as e:
         print str(e)
         risk = 5
-    return risk
+    return (100 - risk)
 
 
 def consume_uids():
