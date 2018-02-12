@@ -64,6 +64,16 @@ def start():
 
 
 @cli.command()
+def restart():
+    """
+    Inicia el procesamiento.
+    """
+    cliPresent()
+    os.system("kill -9 $(pgrep python)")
+    os.system("./pscloud --mode=prod")
+
+
+@cli.command()
 def latest():
     """
     Muestra lo último que hace el cloud.
