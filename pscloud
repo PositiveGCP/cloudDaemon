@@ -207,7 +207,7 @@ def pathFindera7(response):
     risk = MINVAL
     if len(poi) > 0:
         temp = poi.split(';')
-        risk = temp[len(temp) - 1]
+        risk = int(temp[len(temp) - 1])
         if risk >= 95:
             risk = MAXVAL
         if risk <= 5:
@@ -263,7 +263,7 @@ def consume_uids():
                 LVA_RESPONSE = voice._processFile()
                 # Agrear al objeto el json de respuesta y
                 # guardar en archivo de texto
-                partial = pathFindera7(voice.response)
+                partial = str(pathFindera7(voice.response))
                 # Last form of send
                 # partial = pathFinder(voice.response)
                 print "%s --> partial" % (partial)
