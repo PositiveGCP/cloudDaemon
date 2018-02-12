@@ -68,7 +68,6 @@ def restart():
     """
     Inicia el procesamiento.
     """
-    cliPresent()
     os.system("kill -9 $(pgrep python)")
     os.system("./pscloud --mode=prod")
 
@@ -98,11 +97,13 @@ def discover():
 
 
 @cli.command()
-def kill():
+@click.option('--force', '-f', is_flag=True, default=False, help='Force kill')
+def kill(force):
     """
     Destruye los procesos de cloud.
     """
-    click.confirm('¿En verdad quieres detenerlo?', abort=True)
+    if force is False:
+        click.confirm('¿En verdad quieres detenerlo?', abort=True)
     os.system("kill -9 $(pgrep python)")
 
 
