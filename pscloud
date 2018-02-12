@@ -281,8 +281,10 @@ def consume_uids():
                 # transaction_log(transactions_file, voice.response_text,
                 # str(voice.status), time.strftime('%Y/%m/%d - %H:%M:%S'))
                 results.append(voice.response)
+                print results
                 # Se guarda en el objeto las respuestas
                 responseobj.append(partial)
+                print results
 
             # Crear el string que se guarda en firebase res|res|res...
             strres = ""
