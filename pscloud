@@ -460,7 +460,7 @@ def cli(mode):
 def setupLog():
     global log_file
     log_file = create_logfile()
-    print log_file
+    # print log_file
 
 
 def printHeader():
