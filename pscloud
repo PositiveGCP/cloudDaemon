@@ -1,11 +1,9 @@
-#!/usr/bin/python
-# *- coding: utf-8 -*
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
 # @author: Dante bazaldua
 # @brief: Daemon to query Firebase and process information using LVA-CLOUD
 # @date: 27th may, 2017
-
-# Self libraries
 import keys as security
 import mainCLVA as bslogic
 import mail as smail
@@ -19,6 +17,9 @@ import json
 import sys
 from daemonize import Daemonize  # Daemon the service
 import hashlib
+import click
+
+VERSION = 2.1
 
 firebase = pyrebase.initialize_app(security.config)  # Inicializar firebase
 
@@ -124,8 +125,9 @@ class Firebase(object):
     def check_transactions(self):
         task = "check_transactions"
         transactions = db.child("Transfer").get()
-        # key_positive = '-KrY7N-UWdyyicyjAP36'
-        # transactions = db.child("Transfer").order_by_child("key_empresa").equal_to(key_positive).get()
+        # key_positive = '-KrY7N-UWdyyicyjAP36'
+        # transactions = db.child("Transfer").order_by_child("key_empresa").
+        # equal_to(key_positive).get()
         count = 0
         try:
             print "\n$ Transacciones actuales: "
@@ -195,6 +197,24 @@ def pathFinder(req):
     return xresponse
 
 
+def pathFindera7(response):
+    """
+    RA7 pathfinder optimization
+    """
+    poi = str(response['Data']['RISKREPQ'][0])
+    MAXVAL = 95
+    MINVAL = 5
+    risk = MINVAL
+    if len(poi) > 0:
+        temp = poi.split(';')
+        risk = temp[len(temp) - 1]
+        if risk >= 95:
+            risk = MAXVAL
+        if risk <= 5:
+            risk = MINVAL
+    return risk
+
+
 def consume_uids():
     """
     Consume lo que exista en el queue
@@ -217,7 +237,13 @@ def consume_uids():
             tnt = bslogic.Transaction(str(item))  # Crear objeto transaccion
             audio_file = bslogic.AudioFile(tnt.uid)  # Crear objeto de audio
 
-            msg = "Iniciando procesamiento: " + str(item) + ". - [" + time.strftime('%Y/%m/%d - %H:%M:%S') + "]"
+            msg = (
+                "Iniciando procesamiento: "
+                + str(item) +
+                ". - ["
+                + time.strftime('%Y/%m/%d - %H:%M:%S') +
+                "]"
+            )
             system_log(task, msg)
 
             responseobj = []
@@ -230,19 +256,31 @@ def consume_uids():
             # Procesamiento de los archivos de voz
             for element in audio_file.paths:
                 # A este punto se debió haber procesado cada uno de los audios
-                # print "\t $ Procesando: %s %s" %( element, time.strftime('%Y/%m/%d - %H:%M:%S') ),
+                TM_init = time.strftime('%Y/%m/%d - %H:%M:%S')
+                print "\t $ Procesando: %s %s" % (element, TM_init),
                 voice = bslogic.LvaProcess(element, tnt.uid)
-                # Añadido debido a la complejidad para ver que sucede durante el proceso
+                # + por la complejidad para ver que sucede durante el proceso
                 LVA_RESPONSE = voice._processFile()
-                # Agrear al objeto el json de respuesta y guardar en archivo de texto
-                partial = pathFinder(voice.response)
+                # Agrear al objeto el json de respuesta y
+                # guardar en archivo de texto
+                partial = pathFindera7(voice.response)
+                # Last form of send
+                # partial = pathFinder(voice.response)
+                print "%s --> partial" % (partial)
                 system_log(task, "RES: [ " + partial + " ]")
                 # Formato de impresión en tabla
-                print "%20s | %30s | %10s" % (element, time.strftime('%Y/%m/%d - %H:%M:%S'), partial)
+                TM_end = time.strftime('%Y/%m/%d - %H:%M:%S')
+                print "%20s | %30s | %10s" % (element, TM_end, partial)
                 # Guardar en el archivo de texto
-                transaction_log(transactions_file, voice.response_text, str(voice.status), time.strftime('%Y/%m/%d - %H:%M:%S') )  # Escribir la transaccion
+                t = transactions_file
+                v = voice.response_text
+                s = str(voice.status)
+                transaction_log(t, v, s, TM_end)
+                # transaction_log(transactions_file, voice.response_text,
+                # str(voice.status), time.strftime('%Y/%m/%d - %H:%M:%S'))
                 results.append(voice.response)
-                responseobj.append(partial)  # Se guarda en el objeto las respuestas
+                # Se guarda en el objeto las respuestas
+                responseobj.append(partial)
 
             # Crear el string que se guarda en firebase res|res|res...
             strres = ""
@@ -281,19 +319,25 @@ def consume_uids():
                 d['fecha'] = time.strftime('%Y/%m/%d - %H:%M:%S')
                 smail.sendmail(d)
 
-
-            print "\t $ Rama actualizada: %s" %(item)
-
-            msg = "Actualizacion de " + str(item)  + ". Procesamiento de " + str(len( audio_file.paths )) + " audios. - [" + time.strftime('%Y/%m/%d - %H:%M:%S') + "]. Resultado : " + strres
+            print "\t $ Rama actualizada: %s" % (item)
+            msg = (
+                "Actualizacion de "
+                + str(item) +
+                ". Procesamiento de "
+                + str(len(audio_file.paths)) +
+                " audios. - ["
+                + time.strftime('%Y/%m/%d - %H:%M:%S') +
+                "]. Resultado : " + strres
+            )
             system_log(task, msg)
 
-
         except Exception as err_processing:
-            print "Ocurrio durante el proceso[%s]: %s" % (task, str(err_processing))
+            print "[PROBLEM]= proceso[%s]: %s" % (task, str(err_processing))
 
-        print "\t\t$ Finished --> %s [%s]" % (str(item), kiwi.qsize())
+        print ("\t\t$ Finished --> %s [%s]") % (str(item), kiwi.qsize())
 
-        # print "\t ConsThread: terminó queue[current size = {0}] at time = {1} ".format( kiwi.qsize(), time.strftime('%H:%M:%S'))
+        # print "\t ConsThread: terminó queue[current size = {0}] at time = {1}
+        # ".format( kiwi.qsize(), time.strftime('%H:%M:%S'))
         kiwi.task_done()
 
 
@@ -346,9 +390,9 @@ def producer_stream(message):
 
 # Main function
 def main():
-
     # ------------------------ Streaming -------------------------
-    my_stream = db.child("Transfer").stream(producer_stream, stream_id="new_transaction")
+    # nt: new transaction
+    my_stream = db.child("Transfer").stream(producer_stream, stream_id="nt")
 
     task = "main_thread"
     msg = "Iniciando el servicio..."
@@ -385,13 +429,43 @@ def main():
     print "Bye, by Dante Baz\n"
 
 
+@click.command()
+@click.option('--mode', '-d', help='Executes \
+in mode <dev|prod>')
+def cli(mode):
+    """
+    Manage cloudDaemon with daemon or verbosity mode.
+    """
+    if mode == "dev" or mode == "prod":
+        print "Or"
+        setupLog()
+        printHeader()
+    if mode == "dev":
+        print "Dev"
+        main()
+    elif mode == "prod":
+        print "Prod"
+        setupLog()
+        myname = os.path.basename(sys.argv[0])
+        pidfile = '/tmp/%s' % myname       # any name
+        daemon = Daemonize(app=myname, pid=pidfile, action=main)
+        daemon.start()
+    else:
+        printHeader()
+        print "Bad usage:"
+        print "See ./pscloud -h|--help"
+
+
+def setupLog():
+    global log_file
+    log_file = create_logfile()
+    print log_file
+
+
+def printHeader():
+    print "Copyright (c) 2017--, The Positive Compliance Development Team."
+    print "Cloud System (Nemesysco connect) v%s" % (VERSION)
+
+
 if __name__ == "__main__":
-    log_file = create_logfile()  # System: Archivo donde guardar el log del sistema.
-    os.system('clear')  # Clean screen
-    print "%s\nAuthor: %s" %("Daemon Start - CLVA v0.4 Positive Compliance","Dante Fernando Bazaldua Huerta")
-    # In case of no daemon
-    # main()
-    myname=os.path.basename(sys.argv[0])
-    pidfile='/tmp/%s' % myname       # any name
-    daemon = Daemonize(app=myname,pid=pidfile, action=main)
-    daemon.start()
+    cli()
