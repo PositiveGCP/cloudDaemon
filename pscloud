@@ -218,6 +218,7 @@ def pathFindera7(response):
     except Exception as e:
         print str(e)
         risk = 5
+        
     return (100 - risk)
 
 

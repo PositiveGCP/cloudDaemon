@@ -127,6 +127,7 @@ class Transaction(object):
             # Cambiar los datos en la rama
             th["resultado"] = information
             th["date_final"] = time.strftime('%Y/%m/%d - %H:%M:%S %Z', timex)
+            th["codec"] = "ra7"
             th["processed"] = True
             # print users
             db.child("Transfer").child(self.uid).set(th)
