@@ -114,11 +114,7 @@ class Transaction(object):
     # Constructor:
     # Id de la transaccion
     def __init__(self, uid):
-        print uid
-        transaction = db.child("Transfer/" + uid).get()
-        th = transaction.val()
-        print th['key']
-        self.uid = th['key']
+        self.uid = uid
         pass
 
     # Actualiza la rama con el resultado y la fecha
@@ -157,10 +153,7 @@ class AudioFile(object):
     # Constructor, asigna un uid para concretar la transaccion
     def __init__(self, uid):
         self.paths = []
-        transaction = db.child("Transfer/" + uid).get()
-        th = transaction.val()
-        self.uid = th['key']
-        # self.uid = uid
+        self.uid = uid
         # Obtener el archivo de procesamiento automaticamente
         self.getProcessingFile()
 

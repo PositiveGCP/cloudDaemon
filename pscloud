@@ -229,6 +229,19 @@ def pathFindera7(response):
     return risk
 
 
+def getUID(key):
+    try:
+        element = db.child('Transfer').child(key).get()
+        tran = element.val()
+        if 'key' not in tran:
+            return None
+    except Exception as e:
+        print str(e)
+        return None
+
+    return tran['key']
+
+
 def consume_uids(possible_id):
     """
     Consume lo que exista en el queue
@@ -252,6 +265,16 @@ def consume_uids(possible_id):
         # ------------------------ Business logic -------------------------
         try:
             print "Entre al try"
+
+            key = getUID(item)
+            if key is None:
+                print "No lo encontré."
+                return 1
+            else:
+                item = key
+
+            print item
+
             tnt = bslogic.Transaction(str(item))  # Crear objeto transaccion
             audio_file = bslogic.AudioFile(tnt.uid)  # Crear objeto de audio
             print "Audio y tnt "
@@ -463,8 +486,10 @@ def main():
 in mode <dev|prod>')
 @click.option('--single', '-s', is_flag=True, default=False, help='Execute \
 single transaction')
-@click.argument('id', nargs=1)
-def cli(mode, single, id):
+# @click.argument('id', type=(unicode), nargs=1)
+@click.option('--key', '-k', type=(unicode), help='Buscar \
+un id.', required=True)
+def cli(mode, single, key):
     """
     Manage cloudDaemon with daemon or verbosity mode.
     """
@@ -480,7 +505,7 @@ def cli(mode, single, id):
         else:
             global ST
             ST = True
-            processOne(id)
+            processOne(key)
     elif mode == "prod":
         # print "Prod"
         setupLog()
@@ -496,7 +521,8 @@ def cli(mode, single, id):
 
 
 def processOne(id):
-    consume_uids('-' + id)
+    # consume_uids('-' + id)
+    consume_uids(id)
     print ("\t\t$ Finished --> %s") % (str(id))
 
 

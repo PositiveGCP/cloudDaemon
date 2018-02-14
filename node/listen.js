@@ -28,7 +28,7 @@ transferdb.on('child_added', function(snapshot){
   var key = (snapshot.key).substr(1, ((snapshot.key).length)-1 );
   var now = moment().format("YY/MM/DD - HH:mm:ss Z");
   fs.appendFileSync('status.log', "[NEW]" + snapshot.key + " | " + now + "\n");
-  var args = '--mode=dev -s ' + key;
+  var args = '--mode=dev -s --key=' + key;
   child = exec('"../pscloud" ' + args, function (error, stdout, stderr) {
     fs.appendFileSync("status.log", "[COOL]: ID: " + snapshot.key + "\n");
     if (stderr.length > 0){
