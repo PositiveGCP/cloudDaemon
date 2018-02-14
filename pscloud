@@ -224,9 +224,9 @@ def pathFindera7(response):
     except Exception as e:
         # TODO Agregar valor cuando haya error
         print str(e)
-        risk = 40
+        risk = 60
 
-    return (100 - risk)
+    return risk
 
 
 def consume_uids(possible_id):
