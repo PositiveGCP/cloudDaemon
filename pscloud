@@ -251,9 +251,10 @@ def consume_uids(possible_id):
 
         # ------------------------ Business logic -------------------------
         try:
+            print "Entre al try"
             tnt = bslogic.Transaction(str(item))  # Crear objeto transaccion
             audio_file = bslogic.AudioFile(tnt.uid)  # Crear objeto de audio
-
+            print "Audio y tnt "
             msg = (
                 "Iniciando procesamiento: "
                 + str(item) +
