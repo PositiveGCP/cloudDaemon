@@ -114,6 +114,7 @@ class Transaction(object):
     # Constructor:
     # Id de la transaccion
     def __init__(self, uid):
+        print uid
         transaction = db.child("Transfer/" + uid).get()
         th = transaction.val()
         print th['key']
