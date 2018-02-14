@@ -114,7 +114,9 @@ class Transaction(object):
     # Constructor:
     # Id de la transaccion
     def __init__(self, uid):
-        self.uid = uid
+        transaction = db.child("Transfer/" + self.uid).get()
+        th = transaction.val()
+        self.uid = th['key']
         pass
 
     # Actualiza la rama con el resultado y la fecha
