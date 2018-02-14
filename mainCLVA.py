@@ -116,6 +116,7 @@ class Transaction(object):
     def __init__(self, uid):
         transaction = db.child("Transfer/" + uid).get()
         th = transaction.val()
+        print th['key']
         self.uid = th['key']
         pass
 
