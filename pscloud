@@ -266,6 +266,8 @@ def consume_uids(possible_id):
         try:
             print "Entre al try"
 
+            _branchkey = item
+
             key = getUID(item)
             if key is None:
                 print "No lo encontré."
@@ -339,10 +341,10 @@ def consume_uids(possible_id):
             strres = temp
 
             # Crear el json y guardar la informacion completa
-            transactions_file_json = create_transfile(str(item), "json")
+            transactions_file_json = create_transfile(str(_branchkey), "json")
             result_data = {}
 
-            result_data['uid_trans'] = str(item)
+            result_data['uid_trans'] = str(_branchkey)
             result_data['fecha'] = time.strftime('%Y/%m/%d - %H:%M:%S')
             result_data['resume'] = strres
             result_data['raw_data'] = results
@@ -357,15 +359,15 @@ def consume_uids(possible_id):
             # Modificacion urgente para el mail TODO: optimizar
             if strres is not "":
                 d = {}
-                d['id'] = str(item)
+                d['id'] = str(_branchkey)
                 d['resume'] = strres
                 d['fecha'] = time.strftime('%Y/%m/%d - %H:%M:%S')
                 smail.sendmail(d)
 
-            print "$ Rama actualizada: %s" % (item)
+            print "$ Rama actualizada: %s" % (_branchkey)
             msg = (
                 "Actualizacion de "
-                + str(item) +
+                + str(_branchkey) +
                 ". Procesamiento de "
                 + str(len(audio_file.paths)) +
                 " audios. - ["
