@@ -1,0 +1,1195 @@
+Starting up...
+[NEW]-L4g886OH4AcaegQRqiX | 18/02/18 - 20:56:42 -07:00
+[NEW]-L4vF763XOuWRkl6Ywwu | 18/02/18 - 20:56:42 -07:00
+[NEW]-L4vp6bQsUSCnAt1pSnA | 18/02/18 - 20:56:42 -07:00
+[NEW]-L59ukbde08Ne3vRHnB0 | 18/02/18 - 20:56:42 -07:00
+[NEW]-L5Fm-7X9SOYtPmPRljc | 18/02/18 - 20:56:42 -07:00
+[NEW]-L5U9-uXzS-lKsK7AOQP | 18/02/18 - 20:56:42 -07:00
+[NEW]-L5URlkk_ShQiD82YCOL | 18/02/18 - 20:56:42 -07:00
+[NEW]-L5UlmR-oKjAIAf_laSV | 18/02/18 - 20:56:42 -07:00
+[NEW]-L5UvRE-PVoZhPhNdNhd | 18/02/18 - 20:56:42 -07:00
+[NEW]-L5UvTZSTfqQYWJ1bH1T | 18/02/18 - 20:56:42 -07:00
+[NEW]-L5V9qqAr4P01zPoBm4g | 18/02/18 - 20:56:42 -07:00
+[NEW]-L5VGz1S5YyVUbOquK4o | 18/02/18 - 20:56:42 -07:00
+[NEW]-L5VQEHwFHBLwKxN6j2w | 18/02/18 - 20:56:42 -07:00
+[NEW]-L5VV097fi_OXOHn7nH4 | 18/02/18 - 20:56:42 -07:00
+[NEW]-L5VgOwIhai_-YlVyPOA | 18/02/18 - 20:56:42 -07:00
+[NEW]-L5ZOe03BUGvszVSzjqf | 18/02/18 - 20:56:42 -07:00
+[NEW]-L5ZSwlaqXV-Jy_Iq4Bv | 18/02/18 - 20:56:42 -07:00
+[NEW]-L5ZT_uU2dKu-7_veXii | 18/02/18 - 20:56:42 -07:00
+[NEW]-L5ZVk_ioNa5q4fVTkiI | 18/02/18 - 20:56:42 -07:00
+[NEW]-L5ZhQi9txLS8D2kEsbO | 18/02/18 - 20:56:42 -07:00
+[NEW]-L5ZhokQMfBF3NE1ANdW | 18/02/18 - 20:56:42 -07:00
+[NEW]-L5ZqJdjMx00gWiR3os5 | 18/02/18 - 20:56:42 -07:00
+[COOL]: ID: -L5ZqJdjMx00gWiR3os5
+[Err]: ID: -L5ZqJdjMx00gWiR3os5
+[Err]: Execution error. Error: Command failed: /bin/sh -c "../pscloud" --mode=dev -s --key=-L5ZqJdjMx00gWiR3os5
+/bin/sh: 1: ../pscloud: not found
+[COOL]: ID: -L5ZhokQMfBF3NE1ANdW
+[Err]: ID: -L5ZhokQMfBF3NE1ANdW
+[Err]: Execution error. Error: Command failed: /bin/sh -c "../pscloud" --mode=dev -s --key=-L5ZhokQMfBF3NE1ANdW
+/bin/sh: 1: ../pscloud: not found
+[COOL]: ID: -L5ZhQi9txLS8D2kEsbO
+[Err]: ID: -L5ZhQi9txLS8D2kEsbO
+[Err]: Execution error. Error: Command failed: /bin/sh -c "../pscloud" --mode=dev -s --key=-L5ZhQi9txLS8D2kEsbO
+/bin/sh: 1: ../pscloud: not found
+[COOL]: ID: -L5ZVk_ioNa5q4fVTkiI
+[Err]: ID: -L5ZVk_ioNa5q4fVTkiI
+[Err]: Execution error. Error: Command failed: /bin/sh -c "../pscloud" --mode=dev -s --key=-L5ZVk_ioNa5q4fVTkiI
+/bin/sh: 1: ../pscloud: not found
+[COOL]: ID: -L5ZT_uU2dKu-7_veXii
+[Err]: ID: -L5ZT_uU2dKu-7_veXii
+[Err]: Execution error. Error: Command failed: /bin/sh -c "../pscloud" --mode=dev -s --key=-L5ZT_uU2dKu-7_veXii
+/bin/sh: 1: ../pscloud: not found
+[COOL]: ID: -L5ZSwlaqXV-Jy_Iq4Bv
+[Err]: ID: -L5ZSwlaqXV-Jy_Iq4Bv
+[Err]: Execution error. Error: Command failed: /bin/sh -c "../pscloud" --mode=dev -s --key=-L5ZSwlaqXV-Jy_Iq4Bv
+/bin/sh: 1: ../pscloud: not found
+[COOL]: ID: -L5ZOe03BUGvszVSzjqf
+[Err]: ID: -L5ZOe03BUGvszVSzjqf
+[Err]: Execution error. Error: Command failed: /bin/sh -c "../pscloud" --mode=dev -s --key=-L5ZOe03BUGvszVSzjqf
+/bin/sh: 1: ../pscloud: not found
+[COOL]: ID: -L5VgOwIhai_-YlVyPOA
+[Err]: ID: -L5VgOwIhai_-YlVyPOA
+[Err]: Execution error. Error: Command failed: /bin/sh -c "../pscloud" --mode=dev -s --key=-L5VgOwIhai_-YlVyPOA
+/bin/sh: 1: ../pscloud: not found
+[COOL]: ID: -L5VV097fi_OXOHn7nH4
+[Err]: ID: -L5VV097fi_OXOHn7nH4
+[Err]: Execution error. Error: Command failed: /bin/sh -c "../pscloud" --mode=dev -s --key=-L5VV097fi_OXOHn7nH4
+/bin/sh: 1: ../pscloud: not found
+[COOL]: ID: -L5VQEHwFHBLwKxN6j2w
+[Err]: ID: -L5VQEHwFHBLwKxN6j2w
+[Err]: Execution error. Error: Command failed: /bin/sh -c "../pscloud" --mode=dev -s --key=-L5VQEHwFHBLwKxN6j2w
+/bin/sh: 1: ../pscloud: not found
+[COOL]: ID: -L5VGz1S5YyVUbOquK4o
+[Err]: ID: -L5VGz1S5YyVUbOquK4o
+[Err]: Execution error. Error: Command failed: /bin/sh -c "../pscloud" --mode=dev -s --key=-L5VGz1S5YyVUbOquK4o
+/bin/sh: 1: ../pscloud: not found
+[COOL]: ID: -L5V9qqAr4P01zPoBm4g
+[Err]: ID: -L5V9qqAr4P01zPoBm4g
+[Err]: Execution error. Error: Command failed: /bin/sh -c "../pscloud" --mode=dev -s --key=-L5V9qqAr4P01zPoBm4g
+/bin/sh: 1: ../pscloud: not found
+[COOL]: ID: -L5UvTZSTfqQYWJ1bH1T
+[Err]: ID: -L5UvTZSTfqQYWJ1bH1T
+[Err]: Execution error. Error: Command failed: /bin/sh -c "../pscloud" --mode=dev -s --key=-L5UvTZSTfqQYWJ1bH1T
+/bin/sh: 1: ../pscloud: not found
+[COOL]: ID: -L5UvRE-PVoZhPhNdNhd
+[Err]: ID: -L5UvRE-PVoZhPhNdNhd
+[Err]: Execution error. Error: Command failed: /bin/sh -c "../pscloud" --mode=dev -s --key=-L5UvRE-PVoZhPhNdNhd
+/bin/sh: 1: ../pscloud: not found
+[COOL]: ID: -L5UlmR-oKjAIAf_laSV
+[Err]: ID: -L5UlmR-oKjAIAf_laSV
+[Err]: Execution error. Error: Command failed: /bin/sh -c "../pscloud" --mode=dev -s --key=-L5UlmR-oKjAIAf_laSV
+/bin/sh: 1: ../pscloud: not found
+[COOL]: ID: -L5URlkk_ShQiD82YCOL
+[Err]: ID: -L5URlkk_ShQiD82YCOL
+[Err]: Execution error. Error: Command failed: /bin/sh -c "../pscloud" --mode=dev -s --key=-L5URlkk_ShQiD82YCOL
+/bin/sh: 1: ../pscloud: not found
+[COOL]: ID: -L5U9-uXzS-lKsK7AOQP
+[Err]: ID: -L5U9-uXzS-lKsK7AOQP
+[Err]: Execution error. Error: Command failed: /bin/sh -c "../pscloud" --mode=dev -s --key=-L5U9-uXzS-lKsK7AOQP
+/bin/sh: 1: ../pscloud: not found
+[COOL]: ID: -L5Fm-7X9SOYtPmPRljc
+[Err]: ID: -L5Fm-7X9SOYtPmPRljc
+[Err]: Execution error. Error: Command failed: /bin/sh -c "../pscloud" --mode=dev -s --key=-L5Fm-7X9SOYtPmPRljc
+/bin/sh: 1: ../pscloud: not found
+[COOL]: ID: -L59ukbde08Ne3vRHnB0
+[Err]: ID: -L59ukbde08Ne3vRHnB0
+[Err]: Execution error. Error: Command failed: /bin/sh -c "../pscloud" --mode=dev -s --key=-L59ukbde08Ne3vRHnB0
+/bin/sh: 1: ../pscloud: not found
+[COOL]: ID: -L4vp6bQsUSCnAt1pSnA
+[Err]: ID: -L4vp6bQsUSCnAt1pSnA
+[Err]: Execution error. Error: Command failed: /bin/sh -c "../pscloud" --mode=dev -s --key=-L4vp6bQsUSCnAt1pSnA
+/bin/sh: 1: ../pscloud: not found
+[COOL]: ID: -L4vF763XOuWRkl6Ywwu
+[Err]: ID: -L4vF763XOuWRkl6Ywwu
+[Err]: Execution error. Error: Command failed: /bin/sh -c "../pscloud" --mode=dev -s --key=-L4vF763XOuWRkl6Ywwu
+/bin/sh: 1: ../pscloud: not found
+[COOL]: ID: -L4g886OH4AcaegQRqiX
+[Err]: ID: -L4g886OH4AcaegQRqiX
+[Err]: Execution error. Error: Command failed: /bin/sh -c "../pscloud" --mode=dev -s --key=-L4g886OH4AcaegQRqiX
+/bin/sh: 1: ../pscloud: not found
+Starting up...
+[NEW]-L4g886OH4AcaegQRqiX | 18/02/18 - 21:03:19 -07:00
+[NEW]-L4vF763XOuWRkl6Ywwu | 18/02/18 - 21:03:19 -07:00
+[NEW]-L4vp6bQsUSCnAt1pSnA | 18/02/18 - 21:03:19 -07:00
+[NEW]-L59ukbde08Ne3vRHnB0 | 18/02/18 - 21:03:19 -07:00
+[NEW]-L5Fm-7X9SOYtPmPRljc | 18/02/18 - 21:03:19 -07:00
+[NEW]-L5U9-uXzS-lKsK7AOQP | 18/02/18 - 21:03:19 -07:00
+[NEW]-L5URlkk_ShQiD82YCOL | 18/02/18 - 21:03:19 -07:00
+[NEW]-L5UlmR-oKjAIAf_laSV | 18/02/18 - 21:03:19 -07:00
+[NEW]-L5UvRE-PVoZhPhNdNhd | 18/02/18 - 21:03:19 -07:00
+[NEW]-L5UvTZSTfqQYWJ1bH1T | 18/02/18 - 21:03:19 -07:00
+[NEW]-L5V9qqAr4P01zPoBm4g | 18/02/18 - 21:03:19 -07:00
+[NEW]-L5VQEHwFHBLwKxN6j2w | 18/02/18 - 21:03:19 -07:00
+[NEW]-L5VV097fi_OXOHn7nH4 | 18/02/18 - 21:03:19 -07:00
+[NEW]-L5VgOwIhai_-YlVyPOA | 18/02/18 - 21:03:19 -07:00
+[NEW]-L5ZOe03BUGvszVSzjqf | 18/02/18 - 21:03:19 -07:00
+[NEW]-L5ZSwlaqXV-Jy_Iq4Bv | 18/02/18 - 21:03:19 -07:00
+[NEW]-L5ZT_uU2dKu-7_veXii | 18/02/18 - 21:03:19 -07:00
+[NEW]-L5ZVk_ioNa5q4fVTkiI | 18/02/18 - 21:03:19 -07:00
+[NEW]-L5ZhQi9txLS8D2kEsbO | 18/02/18 - 21:03:19 -07:00
+[NEW]-L5ZhokQMfBF3NE1ANdW | 18/02/18 - 21:03:19 -07:00
+[NEW]-L5ZqJdjMx00gWiR3os5 | 18/02/18 - 21:03:19 -07:00
+[COOL]: ID: -L5ZqJdjMx00gWiR3os5
+[Err]: ID: -L5ZqJdjMx00gWiR3os5
+[Err]: Execution error. Error: Command failed: /bin/sh -c "./pscloud" --mode=dev -s --key=-L5ZqJdjMx00gWiR3os5
+Traceback (most recent call last):
+  File "./pscloud", line 8, in <module>
+    import mainCLVA as bslogic
+  File "/home/devpos/coreapps/cloudDaemon/mainCLVA.py", line 18, in <module>
+    security.passwd
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 85, in sign_in_with_email_and_password
+    raise_detailed_error(request_object)
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 448, in raise_detailed_error
+    raise HTTPError(e, request_object.text)
+requests.exceptions.HTTPError: [Errno 400 Client Error: Bad Request for url: https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyAT7spVMFGob7q6Q1UJCaMi6RvGoMBgcAc] {
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "invalid",
+    "message": "TOO_MANY_ATTEMPTS_TRY_LATER"
+   }
+  ],
+  "code": 400,
+  "message": "TOO_MANY_ATTEMPTS_TRY_LATER"
+ }
+}
+
+[COOL]: ID: -L59ukbde08Ne3vRHnB0
+[Err]: ID: -L59ukbde08Ne3vRHnB0
+[Err]: Execution error. Error: Command failed: /bin/sh -c "./pscloud" --mode=dev -s --key=-L59ukbde08Ne3vRHnB0
+Traceback (most recent call last):
+  File "./pscloud", line 9, in <module>
+    import mail as smail
+  File "/home/devpos/coreapps/cloudDaemon/mail.py", line 19, in <module>
+    security.passwd
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 85, in sign_in_with_email_and_password
+    raise_detailed_error(request_object)
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 448, in raise_detailed_error
+    raise HTTPError(e, request_object.text)
+requests.exceptions.HTTPError: [Errno 400 Client Error: Bad Request for url: https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyAT7spVMFGob7q6Q1UJCaMi6RvGoMBgcAc] {
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "invalid",
+    "message": "TOO_MANY_ATTEMPTS_TRY_LATER"
+   }
+  ],
+  "code": 400,
+  "message": "TOO_MANY_ATTEMPTS_TRY_LATER"
+ }
+}
+
+[COOL]: ID: -L4g886OH4AcaegQRqiX
+[Err]: ID: -L4g886OH4AcaegQRqiX
+[Err]: Execution error. Error: Command failed: /bin/sh -c "./pscloud" --mode=dev -s --key=-L4g886OH4AcaegQRqiX
+Traceback (most recent call last):
+  File "./pscloud", line 9, in <module>
+    import mail as smail
+  File "/home/devpos/coreapps/cloudDaemon/mail.py", line 19, in <module>
+    security.passwd
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 85, in sign_in_with_email_and_password
+    raise_detailed_error(request_object)
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 448, in raise_detailed_error
+    raise HTTPError(e, request_object.text)
+requests.exceptions.HTTPError: [Errno 400 Client Error: Bad Request for url: https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyAT7spVMFGob7q6Q1UJCaMi6RvGoMBgcAc] {
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "invalid",
+    "message": "TOO_MANY_ATTEMPTS_TRY_LATER"
+   }
+  ],
+  "code": 400,
+  "message": "TOO_MANY_ATTEMPTS_TRY_LATER"
+ }
+}
+
+[COOL]: ID: -L5ZhokQMfBF3NE1ANdW
+[Err]: ID: -L5ZhokQMfBF3NE1ANdW
+[Err]: Execution error. Error: Command failed: /bin/sh -c "./pscloud" --mode=dev -s --key=-L5ZhokQMfBF3NE1ANdW
+Traceback (most recent call last):
+  File "./pscloud", line 9, in <module>
+    import mail as smail
+  File "/home/devpos/coreapps/cloudDaemon/mail.py", line 19, in <module>
+    security.passwd
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 85, in sign_in_with_email_and_password
+    raise_detailed_error(request_object)
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 448, in raise_detailed_error
+    raise HTTPError(e, request_object.text)
+requests.exceptions.HTTPError: [Errno 400 Client Error: Bad Request for url: https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyAT7spVMFGob7q6Q1UJCaMi6RvGoMBgcAc] {
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "invalid",
+    "message": "TOO_MANY_ATTEMPTS_TRY_LATER"
+   }
+  ],
+  "code": 400,
+  "message": "TOO_MANY_ATTEMPTS_TRY_LATER"
+ }
+}
+
+[COOL]: ID: -L5UlmR-oKjAIAf_laSV
+[Err]: ID: -L5UlmR-oKjAIAf_laSV
+[Err]: Execution error. Error: Command failed: /bin/sh -c "./pscloud" --mode=dev -s --key=-L5UlmR-oKjAIAf_laSV
+Traceback (most recent call last):
+  File "./pscloud", line 9, in <module>
+    import mail as smail
+  File "/home/devpos/coreapps/cloudDaemon/mail.py", line 19, in <module>
+    security.passwd
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 85, in sign_in_with_email_and_password
+    raise_detailed_error(request_object)
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 448, in raise_detailed_error
+    raise HTTPError(e, request_object.text)
+requests.exceptions.HTTPError: [Errno 400 Client Error: Bad Request for url: https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyAT7spVMFGob7q6Q1UJCaMi6RvGoMBgcAc] {
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "invalid",
+    "message": "TOO_MANY_ATTEMPTS_TRY_LATER"
+   }
+  ],
+  "code": 400,
+  "message": "TOO_MANY_ATTEMPTS_TRY_LATER"
+ }
+}
+
+[COOL]: ID: -L5Fm-7X9SOYtPmPRljc
+[Err]: ID: -L5Fm-7X9SOYtPmPRljc
+[Err]: Execution error. Error: Command failed: /bin/sh -c "./pscloud" --mode=dev -s --key=-L5Fm-7X9SOYtPmPRljc
+Traceback (most recent call last):
+  File "./pscloud", line 9, in <module>
+    import mail as smail
+  File "/home/devpos/coreapps/cloudDaemon/mail.py", line 19, in <module>
+    security.passwd
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 85, in sign_in_with_email_and_password
+    raise_detailed_error(request_object)
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 448, in raise_detailed_error
+    raise HTTPError(e, request_object.text)
+requests.exceptions.HTTPError: [Errno 400 Client Error: Bad Request for url: https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyAT7spVMFGob7q6Q1UJCaMi6RvGoMBgcAc] {
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "invalid",
+    "message": "TOO_MANY_ATTEMPTS_TRY_LATER"
+   }
+  ],
+  "code": 400,
+  "message": "TOO_MANY_ATTEMPTS_TRY_LATER"
+ }
+}
+
+[COOL]: ID: -L4vF763XOuWRkl6Ywwu
+[Err]: ID: -L4vF763XOuWRkl6Ywwu
+[Err]: Execution error. Error: Command failed: /bin/sh -c "./pscloud" --mode=dev -s --key=-L4vF763XOuWRkl6Ywwu
+Traceback (most recent call last):
+  File "./pscloud", line 9, in <module>
+    import mail as smail
+  File "/home/devpos/coreapps/cloudDaemon/mail.py", line 19, in <module>
+    security.passwd
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 85, in sign_in_with_email_and_password
+    raise_detailed_error(request_object)
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 448, in raise_detailed_error
+    raise HTTPError(e, request_object.text)
+requests.exceptions.HTTPError: [Errno 400 Client Error: Bad Request for url: https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyAT7spVMFGob7q6Q1UJCaMi6RvGoMBgcAc] {
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "invalid",
+    "message": "TOO_MANY_ATTEMPTS_TRY_LATER"
+   }
+  ],
+  "code": 400,
+  "message": "TOO_MANY_ATTEMPTS_TRY_LATER"
+ }
+}
+
+[COOL]: ID: -L5URlkk_ShQiD82YCOL
+[Err]: ID: -L5URlkk_ShQiD82YCOL
+[Err]: Execution error. Error: Command failed: /bin/sh -c "./pscloud" --mode=dev -s --key=-L5URlkk_ShQiD82YCOL
+Traceback (most recent call last):
+  File "./pscloud", line 9, in <module>
+    import mail as smail
+  File "/home/devpos/coreapps/cloudDaemon/mail.py", line 19, in <module>
+    security.passwd
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 85, in sign_in_with_email_and_password
+    raise_detailed_error(request_object)
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 448, in raise_detailed_error
+    raise HTTPError(e, request_object.text)
+requests.exceptions.HTTPError: [Errno 400 Client Error: Bad Request for url: https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyAT7spVMFGob7q6Q1UJCaMi6RvGoMBgcAc] {
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "invalid",
+    "message": "TOO_MANY_ATTEMPTS_TRY_LATER"
+   }
+  ],
+  "code": 400,
+  "message": "TOO_MANY_ATTEMPTS_TRY_LATER"
+ }
+}
+
+[COOL]: ID: -L5ZOe03BUGvszVSzjqf
+[Err]: ID: -L5ZOe03BUGvszVSzjqf
+[Err]: Execution error. Error: Command failed: /bin/sh -c "./pscloud" --mode=dev -s --key=-L5ZOe03BUGvszVSzjqf
+Traceback (most recent call last):
+  File "./pscloud", line 9, in <module>
+    import mail as smail
+  File "/home/devpos/coreapps/cloudDaemon/mail.py", line 19, in <module>
+    security.passwd
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 85, in sign_in_with_email_and_password
+    raise_detailed_error(request_object)
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 448, in raise_detailed_error
+    raise HTTPError(e, request_object.text)
+requests.exceptions.HTTPError: [Errno 400 Client Error: Bad Request for url: https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyAT7spVMFGob7q6Q1UJCaMi6RvGoMBgcAc] {
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "invalid",
+    "message": "TOO_MANY_ATTEMPTS_TRY_LATER"
+   }
+  ],
+  "code": 400,
+  "message": "TOO_MANY_ATTEMPTS_TRY_LATER"
+ }
+}
+
+[COOL]: ID: -L5VV097fi_OXOHn7nH4
+[Err]: ID: -L5VV097fi_OXOHn7nH4
+[Err]: Execution error. Error: Command failed: /bin/sh -c "./pscloud" --mode=dev -s --key=-L5VV097fi_OXOHn7nH4
+Traceback (most recent call last):
+  File "./pscloud", line 9, in <module>
+    import mail as smail
+  File "/home/devpos/coreapps/cloudDaemon/mail.py", line 19, in <module>
+    security.passwd
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 85, in sign_in_with_email_and_password
+    raise_detailed_error(request_object)
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 448, in raise_detailed_error
+    raise HTTPError(e, request_object.text)
+requests.exceptions.HTTPError: [Errno 400 Client Error: Bad Request for url: https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyAT7spVMFGob7q6Q1UJCaMi6RvGoMBgcAc] {
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "invalid",
+    "message": "TOO_MANY_ATTEMPTS_TRY_LATER"
+   }
+  ],
+  "code": 400,
+  "message": "TOO_MANY_ATTEMPTS_TRY_LATER"
+ }
+}
+
+[COOL]: ID: -L4vp6bQsUSCnAt1pSnA
+[Err]: ID: -L4vp6bQsUSCnAt1pSnA
+[Err]: Execution error. Error: Command failed: /bin/sh -c "./pscloud" --mode=dev -s --key=-L4vp6bQsUSCnAt1pSnA
+Traceback (most recent call last):
+  File "./pscloud", line 9, in <module>
+    import mail as smail
+  File "/home/devpos/coreapps/cloudDaemon/mail.py", line 19, in <module>
+    security.passwd
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 85, in sign_in_with_email_and_password
+    raise_detailed_error(request_object)
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 448, in raise_detailed_error
+    raise HTTPError(e, request_object.text)
+requests.exceptions.HTTPError: [Errno 400 Client Error: Bad Request for url: https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyAT7spVMFGob7q6Q1UJCaMi6RvGoMBgcAc] {
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "invalid",
+    "message": "TOO_MANY_ATTEMPTS_TRY_LATER"
+   }
+  ],
+  "code": 400,
+  "message": "TOO_MANY_ATTEMPTS_TRY_LATER"
+ }
+}
+
+[COOL]: ID: -L5ZVk_ioNa5q4fVTkiI
+[Err]: ID: -L5ZVk_ioNa5q4fVTkiI
+[Err]: Execution error. Error: Command failed: /bin/sh -c "./pscloud" --mode=dev -s --key=-L5ZVk_ioNa5q4fVTkiI
+Traceback (most recent call last):
+  File "./pscloud", line 9, in <module>
+    import mail as smail
+  File "/home/devpos/coreapps/cloudDaemon/mail.py", line 19, in <module>
+    security.passwd
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 85, in sign_in_with_email_and_password
+    raise_detailed_error(request_object)
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 448, in raise_detailed_error
+    raise HTTPError(e, request_object.text)
+requests.exceptions.HTTPError: [Errno 400 Client Error: Bad Request for url: https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyAT7spVMFGob7q6Q1UJCaMi6RvGoMBgcAc] {
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "invalid",
+    "message": "TOO_MANY_ATTEMPTS_TRY_LATER"
+   }
+  ],
+  "code": 400,
+  "message": "TOO_MANY_ATTEMPTS_TRY_LATER"
+ }
+}
+
+[COOL]: ID: -L5VQEHwFHBLwKxN6j2w
+[Err]: ID: -L5VQEHwFHBLwKxN6j2w
+[Err]: Execution error. Error: Command failed: /bin/sh -c "./pscloud" --mode=dev -s --key=-L5VQEHwFHBLwKxN6j2w
+Traceback (most recent call last):
+  File "./pscloud", line 9, in <module>
+    import mail as smail
+  File "/home/devpos/coreapps/cloudDaemon/mail.py", line 19, in <module>
+    security.passwd
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 85, in sign_in_with_email_and_password
+    raise_detailed_error(request_object)
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 448, in raise_detailed_error
+    raise HTTPError(e, request_object.text)
+requests.exceptions.HTTPError: [Errno 400 Client Error: Bad Request for url: https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyAT7spVMFGob7q6Q1UJCaMi6RvGoMBgcAc] {
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "invalid",
+    "message": "TOO_MANY_ATTEMPTS_TRY_LATER"
+   }
+  ],
+  "code": 400,
+  "message": "TOO_MANY_ATTEMPTS_TRY_LATER"
+ }
+}
+
+[COOL]: ID: -L5ZhQi9txLS8D2kEsbO
+[Err]: ID: -L5ZhQi9txLS8D2kEsbO
+[Err]: Execution error. Error: Command failed: /bin/sh -c "./pscloud" --mode=dev -s --key=-L5ZhQi9txLS8D2kEsbO
+Traceback (most recent call last):
+  File "./pscloud", line 9, in <module>
+    import mail as smail
+  File "/home/devpos/coreapps/cloudDaemon/mail.py", line 19, in <module>
+    security.passwd
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 85, in sign_in_with_email_and_password
+    raise_detailed_error(request_object)
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 448, in raise_detailed_error
+    raise HTTPError(e, request_object.text)
+requests.exceptions.HTTPError: [Errno 400 Client Error: Bad Request for url: https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyAT7spVMFGob7q6Q1UJCaMi6RvGoMBgcAc] {
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "invalid",
+    "message": "TOO_MANY_ATTEMPTS_TRY_LATER"
+   }
+  ],
+  "code": 400,
+  "message": "TOO_MANY_ATTEMPTS_TRY_LATER"
+ }
+}
+
+[COOL]: ID: -L5UvTZSTfqQYWJ1bH1T
+[Err]: ID: -L5UvTZSTfqQYWJ1bH1T
+[Err]: Execution error. Error: Command failed: /bin/sh -c "./pscloud" --mode=dev -s --key=-L5UvTZSTfqQYWJ1bH1T
+Traceback (most recent call last):
+  File "./pscloud", line 9, in <module>
+    import mail as smail
+  File "/home/devpos/coreapps/cloudDaemon/mail.py", line 19, in <module>
+    security.passwd
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 85, in sign_in_with_email_and_password
+    raise_detailed_error(request_object)
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 448, in raise_detailed_error
+    raise HTTPError(e, request_object.text)
+requests.exceptions.HTTPError: [Errno 400 Client Error: Bad Request for url: https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyAT7spVMFGob7q6Q1UJCaMi6RvGoMBgcAc] {
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "invalid",
+    "message": "TOO_MANY_ATTEMPTS_TRY_LATER"
+   }
+  ],
+  "code": 400,
+  "message": "TOO_MANY_ATTEMPTS_TRY_LATER"
+ }
+}
+
+[COOL]: ID: -L5UvRE-PVoZhPhNdNhd
+[Err]: ID: -L5UvRE-PVoZhPhNdNhd
+[Err]: Execution error. Error: Command failed: /bin/sh -c "./pscloud" --mode=dev -s --key=-L5UvRE-PVoZhPhNdNhd
+Traceback (most recent call last):
+  File "./pscloud", line 9, in <module>
+    import mail as smail
+  File "/home/devpos/coreapps/cloudDaemon/mail.py", line 19, in <module>
+    security.passwd
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 85, in sign_in_with_email_and_password
+    raise_detailed_error(request_object)
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 448, in raise_detailed_error
+    raise HTTPError(e, request_object.text)
+requests.exceptions.HTTPError: [Errno 400 Client Error: Bad Request for url: https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyAT7spVMFGob7q6Q1UJCaMi6RvGoMBgcAc] {
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "invalid",
+    "message": "TOO_MANY_ATTEMPTS_TRY_LATER"
+   }
+  ],
+  "code": 400,
+  "message": "TOO_MANY_ATTEMPTS_TRY_LATER"
+ }
+}
+
+[COOL]: ID: -L5VgOwIhai_-YlVyPOA
+[Err]: ID: -L5VgOwIhai_-YlVyPOA
+[Err]: Execution error. Error: Command failed: /bin/sh -c "./pscloud" --mode=dev -s --key=-L5VgOwIhai_-YlVyPOA
+Traceback (most recent call last):
+  File "./pscloud", line 9, in <module>
+    import mail as smail
+  File "/home/devpos/coreapps/cloudDaemon/mail.py", line 19, in <module>
+    security.passwd
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 85, in sign_in_with_email_and_password
+    raise_detailed_error(request_object)
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 448, in raise_detailed_error
+    raise HTTPError(e, request_object.text)
+requests.exceptions.HTTPError: [Errno 400 Client Error: Bad Request for url: https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyAT7spVMFGob7q6Q1UJCaMi6RvGoMBgcAc] {
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "invalid",
+    "message": "TOO_MANY_ATTEMPTS_TRY_LATER"
+   }
+  ],
+  "code": 400,
+  "message": "TOO_MANY_ATTEMPTS_TRY_LATER"
+ }
+}
+
+[COOL]: ID: -L5ZSwlaqXV-Jy_Iq4Bv
+[Err]: ID: -L5ZSwlaqXV-Jy_Iq4Bv
+[Err]: Execution error. Error: Command failed: /bin/sh -c "./pscloud" --mode=dev -s --key=-L5ZSwlaqXV-Jy_Iq4Bv
+Traceback (most recent call last):
+  File "./pscloud", line 9, in <module>
+    import mail as smail
+  File "/home/devpos/coreapps/cloudDaemon/mail.py", line 19, in <module>
+    security.passwd
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 85, in sign_in_with_email_and_password
+    raise_detailed_error(request_object)
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 448, in raise_detailed_error
+    raise HTTPError(e, request_object.text)
+requests.exceptions.HTTPError: [Errno 400 Client Error: Bad Request for url: https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyAT7spVMFGob7q6Q1UJCaMi6RvGoMBgcAc] {
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "invalid",
+    "message": "TOO_MANY_ATTEMPTS_TRY_LATER"
+   }
+  ],
+  "code": 400,
+  "message": "TOO_MANY_ATTEMPTS_TRY_LATER"
+ }
+}
+
+[COOL]: ID: -L5V9qqAr4P01zPoBm4g
+[Err]: ID: -L5V9qqAr4P01zPoBm4g
+[Err]: Execution error. Error: Command failed: /bin/sh -c "./pscloud" --mode=dev -s --key=-L5V9qqAr4P01zPoBm4g
+Traceback (most recent call last):
+  File "./pscloud", line 9, in <module>
+    import mail as smail
+  File "/home/devpos/coreapps/cloudDaemon/mail.py", line 19, in <module>
+    security.passwd
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 85, in sign_in_with_email_and_password
+    raise_detailed_error(request_object)
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 448, in raise_detailed_error
+    raise HTTPError(e, request_object.text)
+requests.exceptions.HTTPError: [Errno 400 Client Error: Bad Request for url: https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyAT7spVMFGob7q6Q1UJCaMi6RvGoMBgcAc] {
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "invalid",
+    "message": "TOO_MANY_ATTEMPTS_TRY_LATER"
+   }
+  ],
+  "code": 400,
+  "message": "TOO_MANY_ATTEMPTS_TRY_LATER"
+ }
+}
+
+Starting up...
+[NEW]-L4g886OH4AcaegQRqiX | 18/02/18 - 21:05:25 -07:00
+[NEW]-L4vF763XOuWRkl6Ywwu | 18/02/18 - 21:05:25 -07:00
+[NEW]-L4vp6bQsUSCnAt1pSnA | 18/02/18 - 21:05:25 -07:00
+[NEW]-L59ukbde08Ne3vRHnB0 | 18/02/18 - 21:05:25 -07:00
+[NEW]-L5Fm-7X9SOYtPmPRljc | 18/02/18 - 21:05:25 -07:00
+[NEW]-L5U9-uXzS-lKsK7AOQP | 18/02/18 - 21:05:25 -07:00
+[NEW]-L5URlkk_ShQiD82YCOL | 18/02/18 - 21:05:25 -07:00
+[NEW]-L5UlmR-oKjAIAf_laSV | 18/02/18 - 21:05:25 -07:00
+[NEW]-L5UvRE-PVoZhPhNdNhd | 18/02/18 - 21:05:25 -07:00
+[NEW]-L5UvTZSTfqQYWJ1bH1T | 18/02/18 - 21:05:25 -07:00
+[NEW]-L5V9qqAr4P01zPoBm4g | 18/02/18 - 21:05:25 -07:00
+[NEW]-L5VQEHwFHBLwKxN6j2w | 18/02/18 - 21:05:25 -07:00
+[NEW]-L5VV097fi_OXOHn7nH4 | 18/02/18 - 21:05:25 -07:00
+[NEW]-L5VgOwIhai_-YlVyPOA | 18/02/18 - 21:05:25 -07:00
+[NEW]-L5ZOe03BUGvszVSzjqf | 18/02/18 - 21:05:25 -07:00
+[NEW]-L5ZSwlaqXV-Jy_Iq4Bv | 18/02/18 - 21:05:25 -07:00
+[NEW]-L5ZT_uU2dKu-7_veXii | 18/02/18 - 21:05:25 -07:00
+[NEW]-L5ZVk_ioNa5q4fVTkiI | 18/02/18 - 21:05:25 -07:00
+[NEW]-L5ZhQi9txLS8D2kEsbO | 18/02/18 - 21:05:25 -07:00
+[NEW]-L5ZhokQMfBF3NE1ANdW | 18/02/18 - 21:05:25 -07:00
+[NEW]-L5ZqJdjMx00gWiR3os5 | 18/02/18 - 21:05:25 -07:00
+[COOL]: ID: -L5ZhQi9txLS8D2kEsbO
+[Err]: ID: -L5ZhQi9txLS8D2kEsbO
+[Err]: Execution error. Error: Command failed: /bin/sh -c "./pscloud" --mode=dev -s --key=-L5ZhQi9txLS8D2kEsbO
+Traceback (most recent call last):
+  File "./pscloud", line 8, in <module>
+    import mainCLVA as bslogic
+  File "/home/devpos/coreapps/cloudDaemon/mainCLVA.py", line 18, in <module>
+    security.passwd
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 85, in sign_in_with_email_and_password
+    raise_detailed_error(request_object)
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 448, in raise_detailed_error
+    raise HTTPError(e, request_object.text)
+requests.exceptions.HTTPError: [Errno 400 Client Error: Bad Request for url: https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyAT7spVMFGob7q6Q1UJCaMi6RvGoMBgcAc] {
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "invalid",
+    "message": "QUOTA_EXCEEDED : Exceeded quota for verifying passwords."
+   }
+  ],
+  "code": 400,
+  "message": "QUOTA_EXCEEDED : Exceeded quota for verifying passwords."
+ }
+}
+
+[COOL]: ID: -L5UvRE-PVoZhPhNdNhd
+[Err]: ID: -L5UvRE-PVoZhPhNdNhd
+[Err]: Execution error. Error: Command failed: /bin/sh -c "./pscloud" --mode=dev -s --key=-L5UvRE-PVoZhPhNdNhd
+Traceback (most recent call last):
+  File "./pscloud", line 8, in <module>
+    import mainCLVA as bslogic
+  File "/home/devpos/coreapps/cloudDaemon/mainCLVA.py", line 18, in <module>
+    security.passwd
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 85, in sign_in_with_email_and_password
+    raise_detailed_error(request_object)
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 448, in raise_detailed_error
+    raise HTTPError(e, request_object.text)
+requests.exceptions.HTTPError: [Errno 400 Client Error: Bad Request for url: https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyAT7spVMFGob7q6Q1UJCaMi6RvGoMBgcAc] {
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "invalid",
+    "message": "QUOTA_EXCEEDED : Exceeded quota for verifying passwords."
+   }
+  ],
+  "code": 400,
+  "message": "QUOTA_EXCEEDED : Exceeded quota for verifying passwords."
+ }
+}
+
+[COOL]: ID: -L5VQEHwFHBLwKxN6j2w
+[Err]: ID: -L5VQEHwFHBLwKxN6j2w
+[Err]: Execution error. Error: Command failed: /bin/sh -c "./pscloud" --mode=dev -s --key=-L5VQEHwFHBLwKxN6j2w
+Traceback (most recent call last):
+  File "./pscloud", line 8, in <module>
+    import mainCLVA as bslogic
+  File "/home/devpos/coreapps/cloudDaemon/mainCLVA.py", line 18, in <module>
+    security.passwd
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 85, in sign_in_with_email_and_password
+    raise_detailed_error(request_object)
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 448, in raise_detailed_error
+    raise HTTPError(e, request_object.text)
+requests.exceptions.HTTPError: [Errno 400 Client Error: Bad Request for url: https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyAT7spVMFGob7q6Q1UJCaMi6RvGoMBgcAc] {
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "invalid",
+    "message": "QUOTA_EXCEEDED : Exceeded quota for verifying passwords."
+   }
+  ],
+  "code": 400,
+  "message": "QUOTA_EXCEEDED : Exceeded quota for verifying passwords."
+ }
+}
+
+[COOL]: ID: -L5UlmR-oKjAIAf_laSV
+[Err]: ID: -L5UlmR-oKjAIAf_laSV
+[Err]: Execution error. Error: Command failed: /bin/sh -c "./pscloud" --mode=dev -s --key=-L5UlmR-oKjAIAf_laSV
+Traceback (most recent call last):
+  File "./pscloud", line 8, in <module>
+    import mainCLVA as bslogic
+  File "/home/devpos/coreapps/cloudDaemon/mainCLVA.py", line 18, in <module>
+    security.passwd
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 85, in sign_in_with_email_and_password
+    raise_detailed_error(request_object)
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 448, in raise_detailed_error
+    raise HTTPError(e, request_object.text)
+requests.exceptions.HTTPError: [Errno 400 Client Error: Bad Request for url: https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyAT7spVMFGob7q6Q1UJCaMi6RvGoMBgcAc] {
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "invalid",
+    "message": "QUOTA_EXCEEDED : Exceeded quota for verifying passwords."
+   }
+  ],
+  "code": 400,
+  "message": "QUOTA_EXCEEDED : Exceeded quota for verifying passwords."
+ }
+}
+
+[COOL]: ID: -L5Fm-7X9SOYtPmPRljc
+[Err]: ID: -L5Fm-7X9SOYtPmPRljc
+[Err]: Execution error. Error: Command failed: /bin/sh -c "./pscloud" --mode=dev -s --key=-L5Fm-7X9SOYtPmPRljc
+Traceback (most recent call last):
+  File "./pscloud", line 8, in <module>
+    import mainCLVA as bslogic
+  File "/home/devpos/coreapps/cloudDaemon/mainCLVA.py", line 18, in <module>
+    security.passwd
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 85, in sign_in_with_email_and_password
+    raise_detailed_error(request_object)
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 448, in raise_detailed_error
+    raise HTTPError(e, request_object.text)
+requests.exceptions.HTTPError: [Errno 400 Client Error: Bad Request for url: https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyAT7spVMFGob7q6Q1UJCaMi6RvGoMBgcAc] {
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "invalid",
+    "message": "QUOTA_EXCEEDED : Exceeded quota for verifying passwords."
+   }
+  ],
+  "code": 400,
+  "message": "QUOTA_EXCEEDED : Exceeded quota for verifying passwords."
+ }
+}
+
+[COOL]: ID: -L5ZVk_ioNa5q4fVTkiI
+[Err]: ID: -L5ZVk_ioNa5q4fVTkiI
+[Err]: Execution error. Error: Command failed: /bin/sh -c "./pscloud" --mode=dev -s --key=-L5ZVk_ioNa5q4fVTkiI
+Traceback (most recent call last):
+  File "./pscloud", line 8, in <module>
+    import mainCLVA as bslogic
+  File "/home/devpos/coreapps/cloudDaemon/mainCLVA.py", line 18, in <module>
+    security.passwd
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 85, in sign_in_with_email_and_password
+    raise_detailed_error(request_object)
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 448, in raise_detailed_error
+    raise HTTPError(e, request_object.text)
+requests.exceptions.HTTPError: [Errno 400 Client Error: Bad Request for url: https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyAT7spVMFGob7q6Q1UJCaMi6RvGoMBgcAc] {
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "invalid",
+    "message": "QUOTA_EXCEEDED : Exceeded quota for verifying passwords."
+   }
+  ],
+  "code": 400,
+  "message": "QUOTA_EXCEEDED : Exceeded quota for verifying passwords."
+ }
+}
+
+[COOL]: ID: -L5ZqJdjMx00gWiR3os5
+[Err]: ID: -L5ZqJdjMx00gWiR3os5
+[Err]: Execution error. Error: Command failed: /bin/sh -c "./pscloud" --mode=dev -s --key=-L5ZqJdjMx00gWiR3os5
+Traceback (most recent call last):
+  File "./pscloud", line 9, in <module>
+    import mail as smail
+  File "/home/devpos/coreapps/cloudDaemon/mail.py", line 19, in <module>
+    security.passwd
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 85, in sign_in_with_email_and_password
+    raise_detailed_error(request_object)
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 448, in raise_detailed_error
+    raise HTTPError(e, request_object.text)
+requests.exceptions.HTTPError: [Errno 400 Client Error: Bad Request for url: https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyAT7spVMFGob7q6Q1UJCaMi6RvGoMBgcAc] {
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "invalid",
+    "message": "QUOTA_EXCEEDED : Exceeded quota for verifying passwords."
+   }
+  ],
+  "code": 400,
+  "message": "QUOTA_EXCEEDED : Exceeded quota for verifying passwords."
+ }
+}
+
+[COOL]: ID: -L5VgOwIhai_-YlVyPOA
+[Err]: ID: -L5VgOwIhai_-YlVyPOA
+[Err]: Execution error. Error: Command failed: /bin/sh -c "./pscloud" --mode=dev -s --key=-L5VgOwIhai_-YlVyPOA
+Traceback (most recent call last):
+  File "./pscloud", line 9, in <module>
+    import mail as smail
+  File "/home/devpos/coreapps/cloudDaemon/mail.py", line 19, in <module>
+    security.passwd
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 85, in sign_in_with_email_and_password
+    raise_detailed_error(request_object)
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 448, in raise_detailed_error
+    raise HTTPError(e, request_object.text)
+requests.exceptions.HTTPError: [Errno 400 Client Error: Bad Request for url: https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyAT7spVMFGob7q6Q1UJCaMi6RvGoMBgcAc] {
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "invalid",
+    "message": "QUOTA_EXCEEDED : Exceeded quota for verifying passwords."
+   }
+  ],
+  "code": 400,
+  "message": "QUOTA_EXCEEDED : Exceeded quota for verifying passwords."
+ }
+}
+
+[COOL]: ID: -L5VV097fi_OXOHn7nH4
+[Err]: ID: -L5VV097fi_OXOHn7nH4
+[Err]: Execution error. Error: Command failed: /bin/sh -c "./pscloud" --mode=dev -s --key=-L5VV097fi_OXOHn7nH4
+Traceback (most recent call last):
+  File "./pscloud", line 9, in <module>
+    import mail as smail
+  File "/home/devpos/coreapps/cloudDaemon/mail.py", line 19, in <module>
+    security.passwd
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 85, in sign_in_with_email_and_password
+    raise_detailed_error(request_object)
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 448, in raise_detailed_error
+    raise HTTPError(e, request_object.text)
+requests.exceptions.HTTPError: [Errno 400 Client Error: Bad Request for url: https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyAT7spVMFGob7q6Q1UJCaMi6RvGoMBgcAc] {
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "invalid",
+    "message": "QUOTA_EXCEEDED : Exceeded quota for verifying passwords."
+   }
+  ],
+  "code": 400,
+  "message": "QUOTA_EXCEEDED : Exceeded quota for verifying passwords."
+ }
+}
+
+[COOL]: ID: -L5U9-uXzS-lKsK7AOQP
+[Err]: ID: -L5U9-uXzS-lKsK7AOQP
+[Err]: Execution error. Error: Command failed: /bin/sh -c "./pscloud" --mode=dev -s --key=-L5U9-uXzS-lKsK7AOQP
+Traceback (most recent call last):
+  File "./pscloud", line 9, in <module>
+    import mail as smail
+  File "/home/devpos/coreapps/cloudDaemon/mail.py", line 19, in <module>
+    security.passwd
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 85, in sign_in_with_email_and_password
+    raise_detailed_error(request_object)
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 448, in raise_detailed_error
+    raise HTTPError(e, request_object.text)
+requests.exceptions.HTTPError: [Errno 400 Client Error: Bad Request for url: https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyAT7spVMFGob7q6Q1UJCaMi6RvGoMBgcAc] {
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "invalid",
+    "message": "QUOTA_EXCEEDED : Exceeded quota for verifying passwords."
+   }
+  ],
+  "code": 400,
+  "message": "QUOTA_EXCEEDED : Exceeded quota for verifying passwords."
+ }
+}
+
+[COOL]: ID: -L5ZT_uU2dKu-7_veXii
+[Err]: ID: -L5ZT_uU2dKu-7_veXii
+[Err]: Execution error. Error: Command failed: /bin/sh -c "./pscloud" --mode=dev -s --key=-L5ZT_uU2dKu-7_veXii
+Traceback (most recent call last):
+  File "./pscloud", line 9, in <module>
+    import mail as smail
+  File "/home/devpos/coreapps/cloudDaemon/mail.py", line 19, in <module>
+    security.passwd
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 85, in sign_in_with_email_and_password
+    raise_detailed_error(request_object)
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 448, in raise_detailed_error
+    raise HTTPError(e, request_object.text)
+requests.exceptions.HTTPError: [Errno 400 Client Error: Bad Request for url: https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyAT7spVMFGob7q6Q1UJCaMi6RvGoMBgcAc] {
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "invalid",
+    "message": "QUOTA_EXCEEDED : Exceeded quota for verifying passwords."
+   }
+  ],
+  "code": 400,
+  "message": "QUOTA_EXCEEDED : Exceeded quota for verifying passwords."
+ }
+}
+
+[COOL]: ID: -L4vp6bQsUSCnAt1pSnA
+[Err]: ID: -L4vp6bQsUSCnAt1pSnA
+[Err]: Execution error. Error: Command failed: /bin/sh -c "./pscloud" --mode=dev -s --key=-L4vp6bQsUSCnAt1pSnA
+Traceback (most recent call last):
+  File "./pscloud", line 9, in <module>
+    import mail as smail
+  File "/home/devpos/coreapps/cloudDaemon/mail.py", line 19, in <module>
+    security.passwd
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 85, in sign_in_with_email_and_password
+    raise_detailed_error(request_object)
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 448, in raise_detailed_error
+    raise HTTPError(e, request_object.text)
+requests.exceptions.HTTPError: [Errno 400 Client Error: Bad Request for url: https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyAT7spVMFGob7q6Q1UJCaMi6RvGoMBgcAc] {
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "invalid",
+    "message": "QUOTA_EXCEEDED : Exceeded quota for verifying passwords."
+   }
+  ],
+  "code": 400,
+  "message": "QUOTA_EXCEEDED : Exceeded quota for verifying passwords."
+ }
+}
+
+[COOL]: ID: -L4g886OH4AcaegQRqiX
+[Err]: ID: -L4g886OH4AcaegQRqiX
+[Err]: Execution error. Error: Command failed: /bin/sh -c "./pscloud" --mode=dev -s --key=-L4g886OH4AcaegQRqiX
+Traceback (most recent call last):
+  File "./pscloud", line 9, in <module>
+    import mail as smail
+  File "/home/devpos/coreapps/cloudDaemon/mail.py", line 19, in <module>
+    security.passwd
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 85, in sign_in_with_email_and_password
+    raise_detailed_error(request_object)
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 448, in raise_detailed_error
+    raise HTTPError(e, request_object.text)
+requests.exceptions.HTTPError: [Errno 400 Client Error: Bad Request for url: https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyAT7spVMFGob7q6Q1UJCaMi6RvGoMBgcAc] {
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "invalid",
+    "message": "QUOTA_EXCEEDED : Exceeded quota for verifying passwords."
+   }
+  ],
+  "code": 400,
+  "message": "QUOTA_EXCEEDED : Exceeded quota for verifying passwords."
+ }
+}
+
+[COOL]: ID: -L5URlkk_ShQiD82YCOL
+[Err]: ID: -L5URlkk_ShQiD82YCOL
+[Err]: Execution error. Error: Command failed: /bin/sh -c "./pscloud" --mode=dev -s --key=-L5URlkk_ShQiD82YCOL
+Traceback (most recent call last):
+  File "./pscloud", line 9, in <module>
+    import mail as smail
+  File "/home/devpos/coreapps/cloudDaemon/mail.py", line 19, in <module>
+    security.passwd
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 85, in sign_in_with_email_and_password
+    raise_detailed_error(request_object)
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 448, in raise_detailed_error
+    raise HTTPError(e, request_object.text)
+requests.exceptions.HTTPError: [Errno 400 Client Error: Bad Request for url: https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyAT7spVMFGob7q6Q1UJCaMi6RvGoMBgcAc] {
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "invalid",
+    "message": "QUOTA_EXCEEDED : Exceeded quota for verifying passwords."
+   }
+  ],
+  "code": 400,
+  "message": "QUOTA_EXCEEDED : Exceeded quota for verifying passwords."
+ }
+}
+
+[COOL]: ID: -L5ZOe03BUGvszVSzjqf
+[Err]: ID: -L5ZOe03BUGvszVSzjqf
+[Err]: Execution error. Error: Command failed: /bin/sh -c "./pscloud" --mode=dev -s --key=-L5ZOe03BUGvszVSzjqf
+Traceback (most recent call last):
+  File "./pscloud", line 9, in <module>
+    import mail as smail
+  File "/home/devpos/coreapps/cloudDaemon/mail.py", line 19, in <module>
+    security.passwd
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 85, in sign_in_with_email_and_password
+    raise_detailed_error(request_object)
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 448, in raise_detailed_error
+    raise HTTPError(e, request_object.text)
+requests.exceptions.HTTPError: [Errno 400 Client Error: Bad Request for url: https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyAT7spVMFGob7q6Q1UJCaMi6RvGoMBgcAc] {
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "invalid",
+    "message": "QUOTA_EXCEEDED : Exceeded quota for verifying passwords."
+   }
+  ],
+  "code": 400,
+  "message": "QUOTA_EXCEEDED : Exceeded quota for verifying passwords."
+ }
+}
+
+[COOL]: ID: -L5UvTZSTfqQYWJ1bH1T
+[Err]: ID: -L5UvTZSTfqQYWJ1bH1T
+[Err]: Execution error. Error: Command failed: /bin/sh -c "./pscloud" --mode=dev -s --key=-L5UvTZSTfqQYWJ1bH1T
+Traceback (most recent call last):
+  File "./pscloud", line 9, in <module>
+    import mail as smail
+  File "/home/devpos/coreapps/cloudDaemon/mail.py", line 19, in <module>
+    security.passwd
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 85, in sign_in_with_email_and_password
+    raise_detailed_error(request_object)
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 448, in raise_detailed_error
+    raise HTTPError(e, request_object.text)
+requests.exceptions.HTTPError: [Errno 400 Client Error: Bad Request for url: https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyAT7spVMFGob7q6Q1UJCaMi6RvGoMBgcAc] {
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "invalid",
+    "message": "QUOTA_EXCEEDED : Exceeded quota for verifying passwords."
+   }
+  ],
+  "code": 400,
+  "message": "QUOTA_EXCEEDED : Exceeded quota for verifying passwords."
+ }
+}
+
+[COOL]: ID: -L5ZhokQMfBF3NE1ANdW
+[Err]: ID: -L5ZhokQMfBF3NE1ANdW
+[Err]: Execution error. Error: Command failed: /bin/sh -c "./pscloud" --mode=dev -s --key=-L5ZhokQMfBF3NE1ANdW
+Traceback (most recent call last):
+  File "./pscloud", line 9, in <module>
+    import mail as smail
+  File "/home/devpos/coreapps/cloudDaemon/mail.py", line 19, in <module>
+    security.passwd
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 85, in sign_in_with_email_and_password
+    raise_detailed_error(request_object)
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 448, in raise_detailed_error
+    raise HTTPError(e, request_object.text)
+requests.exceptions.HTTPError: [Errno 400 Client Error: Bad Request for url: https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyAT7spVMFGob7q6Q1UJCaMi6RvGoMBgcAc] {
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "invalid",
+    "message": "QUOTA_EXCEEDED : Exceeded quota for verifying passwords."
+   }
+  ],
+  "code": 400,
+  "message": "QUOTA_EXCEEDED : Exceeded quota for verifying passwords."
+ }
+}
+
+[COOL]: ID: -L59ukbde08Ne3vRHnB0
+[Err]: ID: -L59ukbde08Ne3vRHnB0
+[Err]: Execution error. Error: Command failed: /bin/sh -c "./pscloud" --mode=dev -s --key=-L59ukbde08Ne3vRHnB0
+Traceback (most recent call last):
+  File "./pscloud", line 9, in <module>
+    import mail as smail
+  File "/home/devpos/coreapps/cloudDaemon/mail.py", line 19, in <module>
+    security.passwd
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 85, in sign_in_with_email_and_password
+    raise_detailed_error(request_object)
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 448, in raise_detailed_error
+    raise HTTPError(e, request_object.text)
+requests.exceptions.HTTPError: [Errno 400 Client Error: Bad Request for url: https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyAT7spVMFGob7q6Q1UJCaMi6RvGoMBgcAc] {
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "invalid",
+    "message": "QUOTA_EXCEEDED : Exceeded quota for verifying passwords."
+   }
+  ],
+  "code": 400,
+  "message": "QUOTA_EXCEEDED : Exceeded quota for verifying passwords."
+ }
+}
+
+[COOL]: ID: -L5ZSwlaqXV-Jy_Iq4Bv
+[Err]: ID: -L5ZSwlaqXV-Jy_Iq4Bv
+[Err]: Execution error. Error: Command failed: /bin/sh -c "./pscloud" --mode=dev -s --key=-L5ZSwlaqXV-Jy_Iq4Bv
+Traceback (most recent call last):
+  File "./pscloud", line 9, in <module>
+    import mail as smail
+  File "/home/devpos/coreapps/cloudDaemon/mail.py", line 19, in <module>
+    security.passwd
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 85, in sign_in_with_email_and_password
+    raise_detailed_error(request_object)
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 448, in raise_detailed_error
+    raise HTTPError(e, request_object.text)
+requests.exceptions.HTTPError: [Errno 400 Client Error: Bad Request for url: https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyAT7spVMFGob7q6Q1UJCaMi6RvGoMBgcAc] {
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "invalid",
+    "message": "QUOTA_EXCEEDED : Exceeded quota for verifying passwords."
+   }
+  ],
+  "code": 400,
+  "message": "QUOTA_EXCEEDED : Exceeded quota for verifying passwords."
+ }
+}
+
+[COOL]: ID: -L5V9qqAr4P01zPoBm4g
+[Err]: ID: -L5V9qqAr4P01zPoBm4g
+[Err]: Execution error. Error: Command failed: /bin/sh -c "./pscloud" --mode=dev -s --key=-L5V9qqAr4P01zPoBm4g
+Traceback (most recent call last):
+  File "./pscloud", line 9, in <module>
+    import mail as smail
+  File "/home/devpos/coreapps/cloudDaemon/mail.py", line 19, in <module>
+    security.passwd
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 85, in sign_in_with_email_and_password
+    raise_detailed_error(request_object)
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 448, in raise_detailed_error
+    raise HTTPError(e, request_object.text)
+requests.exceptions.HTTPError: [Errno 400 Client Error: Bad Request for url: https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyAT7spVMFGob7q6Q1UJCaMi6RvGoMBgcAc] {
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "invalid",
+    "message": "QUOTA_EXCEEDED : Exceeded quota for verifying passwords."
+   }
+  ],
+  "code": 400,
+  "message": "QUOTA_EXCEEDED : Exceeded quota for verifying passwords."
+ }
+}
+
+[COOL]: ID: -L4vF763XOuWRkl6Ywwu
+[Err]: ID: -L4vF763XOuWRkl6Ywwu
+[Err]: Execution error. Error: Command failed: /bin/sh -c "./pscloud" --mode=dev -s --key=-L4vF763XOuWRkl6Ywwu
+Traceback (most recent call last):
+  File "./pscloud", line 9, in <module>
+    import mail as smail
+  File "/home/devpos/coreapps/cloudDaemon/mail.py", line 19, in <module>
+    security.passwd
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 85, in sign_in_with_email_and_password
+    raise_detailed_error(request_object)
+  File "/home/devpos/miniconda2/lib/python2.7/site-packages/pyrebase/pyrebase.py", line 448, in raise_detailed_error
+    raise HTTPError(e, request_object.text)
+requests.exceptions.HTTPError: [Errno 400 Client Error: Bad Request for url: https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyAT7spVMFGob7q6Q1UJCaMi6RvGoMBgcAc] {
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "invalid",
+    "message": "QUOTA_EXCEEDED : Exceeded quota for verifying passwords."
+   }
+  ],
+  "code": 400,
+  "message": "QUOTA_EXCEEDED : Exceeded quota for verifying passwords."
+ }
+}
+

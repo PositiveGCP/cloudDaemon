@@ -18,6 +18,7 @@ user = auth.sign_in_with_email_and_password(
     security.email,
     security.passwd
 )
+# print user
 storage = firebase.storage()  # Referencia al storage
 db = firebase.database()  # Referencia a la base de datos
 
