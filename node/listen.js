@@ -1,10 +1,10 @@
 var firebase = require('firebase');
 var fs = require('fs');
 var sys = require('util')
-var exec = require('child_process').exec;
+// var exec = require('child_process').exec;
+const { spawn } = require('child_process');
+const subprocess = spawn('bad_command');
 var moment = require('moment');
-
-var pscloud;
 
 // Initialize Firebase
 var appConfig = {
@@ -25,18 +25,29 @@ var transferdb = positivedb.ref('Transfer').orderByChild('processed').equalTo(fa
 fs.appendFileSync('status.log', "Starting up...\n");
 
 transferdb.on('child_added', function(snapshot){
-  var key = (snapshot.key).substr(1, ((snapshot.key).length)-1 );
+  var key = snapshot.key;
   var now = moment().format("YY/MM/DD - HH:mm:ss Z");
   fs.appendFileSync('status.log', "[NEW]" + snapshot.key + " | " + now + "\n");
-  var args = '--mode=dev -s --key=' + key;
-  child = exec('"../pscloud" ' + args, function (error, stdout, stderr) {
+
+  console.log(key + '|' + now);
+  const pscloud = spawn('python', ['pscloud', '--mode=dev', '-s', '--key=' + key],{
+    cwd: '../',
+  });
+
+  subprocess.on('error', (err) => {
+    console.log('Failed to start subprocess.');
+    console.log(err);
+  });
+
+  pscloud.stdout.on('data', function(data) {
     fs.appendFileSync("status.log", "[COOL]: ID: " + snapshot.key + "\n");
-    if (stderr.length > 0){
-      fs.appendFileSync("status.log", "[Err]: ID: " + snapshot.key + "\n");
-    }
-    if (error !== null) {
-      fs.appendFileSync("status.log", "[Err]: Execution error. " + error);
-    }
+  });
+  pscloud.stderr.on('data', function(err) {
+    fs.appendFileSync("status.log", "[ERR]: ID: " + err + "\n");
+    console.log(err);
+  });
+  pscloud.on('close', (code) => {
+    console.log(`child process exited with code ${code}`);
   });
 
 });
