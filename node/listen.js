@@ -25,7 +25,8 @@ var transferdb = positivedb.ref('Transfer').orderByChild('processed').equalTo(fa
 fs.appendFileSync('status.log', "Starting up...\n");
 
 transferdb.on('child_added', function(snapshot){
-  var key = (snapshot.key).substr(1, ((snapshot.key).length)-1 );
+  // var key = (snapshot.key).substr(1, ((snapshot.key).length)-1 );
+  var key = snapshot.key;
   var now = moment().format("YY/MM/DD - HH:mm:ss Z");
   fs.appendFileSync('status.log', "[NEW]" + snapshot.key + " | " + now + "\n");
   var args = '--mode=dev -s --key=' + key;

@@ -226,7 +226,7 @@ def pathFindera7(response):
         print str(e)
         risk = 60
 
-    return risk
+    return (100 - risk)
 
 
 def getUID(key):
@@ -239,6 +239,7 @@ def getUID(key):
         print str(e)
         return None
 
+    print tran['key']
     return tran['key']
 
 
@@ -270,8 +271,8 @@ def consume_uids(possible_id):
 
             key = getUID(item)
             if key is None:
-                print "No lo encontré."
-                return 1
+                print "Last version no support for key."
+                pass
             else:
                 item = key
 
