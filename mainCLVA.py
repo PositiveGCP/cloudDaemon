@@ -14,16 +14,9 @@ firebase = pyrebase.initialize_app(security.config)
 auth = firebase.auth()  # Objecto de autenticación
 # Iniciar sesion en firebase
 user = auth.sign_in_with_email_and_password(
-<<<<<<< HEAD
   security.email,
   security.passwd
 )
-# print user
-=======
-    security.email,
-    security.passwd
-    )
->>>>>>> 278b4a113cc1f363b72e1ce4c2c0631331458bc9
 storage = firebase.storage()  # Referencia al storage
 db = firebase.database()  # Referencia a la base de datos
 
