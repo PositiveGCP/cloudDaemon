@@ -12,10 +12,12 @@ import keys as security
 firebase = pyrebase.initialize_app(security.config)
 
 auth = firebase.auth()  # Objecto de autenticación
-e = security.email
-p = security.passwd
+
 # Iniciar sesion en firebase
-user = auth.sign_in_with_email_and_password(e, p)
+user = auth.sign_in_with_email_and_password(
+    security.email,
+    security.passwd
+)
 storage = firebase.storage()  # Referencia al storage
 db = firebase.database()  # Referencia a la base de datos
 
