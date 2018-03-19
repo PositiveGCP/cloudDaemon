@@ -1,9 +1,9 @@
 var firebase = require('firebase');
 var fs = require('fs');
-var sys = require('util')
+var sys = require('util');
 // var exec = require('child_process').exec;
-const { spawn } = require('child_process');
-const subprocess = spawn('bad_command');
+const spawn = require('child_process').spawn;
+// const subprocess = spawn('bad_command');
 var moment = require('moment');
 
 // Initialize Firebase
@@ -34,10 +34,10 @@ transferdb.on('child_added', function(snapshot){
     cwd: '../',
   });
 
-  subprocess.on('error', (err) => {
-    console.log('Failed to start subprocess.');
-    console.log(err);
-  });
+  // subprocess.on('error', (err) => {
+  //   console.log('Failed to start subprocess.');
+  //   console.log(err);
+  // });
 
   pscloud.stdout.on('data', function(data) {
     fs.appendFileSync("status.log", "[COOL]: ID: " + snapshot.key + "\n");
