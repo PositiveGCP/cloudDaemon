@@ -142,6 +142,55 @@ class Transaction(object):
             print e
 
 
+DB_PATH_POSITION = 'Encuestas'
+DB_PATH_TRANSFER = 'Transfer'
+
+
+def getPositionKey(key):
+    try:
+        element = db.child(DB_PATH_TRANSFER).child(key).get()
+        tran = element.val()
+        if 'key_encuesta' not in tran:
+            return None
+    except Exception as e:
+        print str(e)
+        return None
+
+    return tran['key_encuesta']
+
+
+def getPositionInfo(key_encuesta):
+    try:
+        element = db.child(DB_PATH_POSITION).child(key_encuesta).get()
+        tran = element.val()
+        if 'cuestionario' not in tran:
+            return None
+    except Exception as e:
+        print str(e)
+        return None
+
+    return tran['cuestionario']
+
+
+def convertPosIntoPathList(questionary):
+    count = 0
+    paths = []
+    try:
+        for element in questionary:
+            for key in element:
+                if (key == "tipo") and (element[key] == "pregunta"):
+                    paths.append(str(count) + ".wav")
+                    count = count + 1
+        if count == 0:
+            return 0
+
+    except Exception as e:
+        print str(e)
+
+    return paths
+
+
+# Adding new recipe: no processing.
 class AudioFile(object):
     """
     Clase que obtiene todo el archivo de audio
@@ -158,7 +207,12 @@ class AudioFile(object):
         self.paths = []
         self.uid = uid
         # Obtener el archivo de procesamiento automaticamente
-        self.getProcessingFile()
+        key_encuesta = getPositionKey(uid)
+        if key_encuesta is not None:
+            quest = getPositionInfo(key_encuesta)
+            if quest is not None:
+                self.paths = convertPosIntoPathList(quest)
+        # self.getProcessingFile() --> Latest process to get the audio files.
 
     # Obtener el archivo con los audios
     def getProcessingFile(self):
