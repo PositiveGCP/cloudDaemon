@@ -7,4 +7,5 @@ venv/
 *.txt
 node_modules/
 node/*.log
+!node/keysDICT.txt
 node/npm-*
