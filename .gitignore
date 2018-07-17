@@ -9,3 +9,6 @@ node_modules/
 node/*.log
 !node/keysDICT.txt
 node/npm-*
+*.log
+**/.DS_Store
+.DS_Store
