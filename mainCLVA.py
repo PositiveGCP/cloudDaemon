@@ -71,7 +71,7 @@ class LvaProcess(object):
             # Ejecutar solicitud
             audio = storage.child(URL).get_url(user['idToken'])
             # print user['idToken']
-            # print "URL de descarga: -> %s" %(audio)
+            print "URL de descarga: -> %s" %(audio)
 
             # Codificar la URL
             e = audio
