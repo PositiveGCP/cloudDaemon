@@ -1,60 +1,129 @@
-**TODO:** Update documentation (this is deprecated).
-
-# Cloud LVA - Firebase (daemon)
+# Processing
 
 **Positive Compliance LLC**
 
-**Author:** Dante Bazaldua - [danteese](https://github.com/danteese)
+Copyright (c) 2017--, The Positive Compliance Development Team.
 
-*Release:* 1.0
+-----
+**Autor:** Dante Bazaldua - [danteese](https://github.com/danteese)
 
-This service was created in order to tackle the problems the organization had processing audio files locally, and now that we have a cloud service this is the implementation. 
+*Release:* 2.1.1 (July 2018)
 
-Architecture
-------------
+Contenido:
 
-This is the directory tree: (_/home/devroot/new_cloud/cloud_)
+- [Processing](#processing)
+    - [Arquitectura](#arquitectura)
+    - [Principios](#principios)
+        - [Production](#production)
+            - [Transacciones en tiempo real](#transacciones-en-tiempo-real)
+        - [Development](#development)
+            - [`processing`](#processing)
+            - [`pscloud`](#pscloud)
+                - [Pruebas unitarias](#pruebas-unitarias)
+
+Este servicio fue creado con el objetivo de canalizar los problemas que se tenían con un procesamiento en servidores locales a uno que mejorara la portabilidad y pudiera establecer conexiones simultáneas con los servicios de Nemesysco en Israel a través de su API.
+
+## Arquitectura
+
+Archivos y carpetas importantes, esto quiere decir que se requiere que existan es por eso que la primera vez que se ejecuta en un ambiente que no es el del servidor por defecto debe ejecutarse:
+
+```bash
+$ make
+```
+
 ```
 cloud
-│   README.md   -> Description of system (you're actually reading it)
-│   .gitignore  -> Files ignored by git 
-│   cloud.py    -> The main system file
-│   keys.py     -> Binding the keys/passwords/sensitive information
-│   mainCLVA.py -> All classes and functions that process/connect/give result from LVA and firebase
-│   requirements.txt -> What do you need for the virtual enviorment and pip 
-│   tests.py    -> Tiny script to test the daemon
-│   test_real.py  (The same)
+│   processing (executable)
+│   pscloud (core program)
 │
-└───env ( do not move/delete/modify )
-└───transactions ( do not move/delete/modify )
-└───logsystem ( do not move/delete/modify )
+└───log
+└───node 
+└───tran
 ```
 
-Principles 
-----------
+En realidad nunca se trabaja directamente con estos archivos y/o carpetas puesto que existe todo un framework pensado para  trabajar correctamente al cloud sin necesidad de hacer modificaciones manuales.
 
-The first thing we have to make sense is how to start and stop the service. 
 
-**In order to start:** `$ python cloud.py` You should see something like this:
+## Principios
+
+Este servicio está construido "on top" de la biblioteca de Firebase de Streaming lo que permite tener un HTTP Stream escuchando a todo momento si existen cambios en la base de datos que parezcan importantes. Por ahora la que escucha es: `Transfer`.
+
+### Production
+
+Significa que se requiere que el sistema trabaje por si sólo y mantenga estricta comuncación con sus servicios internos y no con el usuario.
+
+* El servicio por defecto para mantener el stream en línea es `pm2`:
 
 ```bash
-Daemon Start - CLVA v0.4 Positive Compliance
- ```
-**Verify daemon:** When the service is running, for example with `$ ps -e` you might see something like this:
+$ cd node
+$ pm2 start listen.js --name=processing
+```
+
+Para **matar el sistema** (en caso de un posible reprocesamiento de toda la rama o problema directamente en la aplicación).
 
 ```bash
- #PID ?        00:00:00 python
- ```
-This shows you that the service provided by **python** has the PID(Process ID) of #something and it's working.
+$ pm2 delete processing
+```
 
-**Turn off:** `bash killcloud.sh` _Be specially careful with this file_, the functionallity is explained later.
+#### Transacciones en tiempo real
 
-* (In case of non-functionality of the script above) Another command you should try in orther to quit the daemon is: `$ pgrep python`, which will give you the PID of the daemon. Furthermore you shoudl type `$ kill -9 PID_THAT_PGREP_SHOW`
+Puede ser útil en el caso de querer revisar si el sistema está funcionando correcatmente. Para poder efectuar una revisión es necesario estar en la carpeta `/node` y ejecutar:
 
-Behavior
---------
+```bash
+$ tail -f status.log
+``` 
 
-The way the daemon was thought is the next: 
+Las transacciones pasadas no tiene caso revisarlas por este medio, es mejor estar atentos a la base de datos.
 
-UML:
-![UML](https://github.com/PositiveGCP/cloudDaemon/blob/master/UML.png "UML")
+### Development
+
+El escenario anterior es el más adecuado para mantener el sistema trabajando con la mínima intervención humana, pero para realizar pruebas es necesario entender *como funcionan los programas más importantes de esta distribución*:
+
+#### `processing`
+
+Ejecutable de Python "on top" de la biblioteca click que permite una interface amigable para el usuario y la hace una CLI, es decir un wrapper de `pscloud`.
+
+Principales comandos: 
+
++ Cuando se requiere información de la transacción de la persona:
+
+```bash
+$ ./processing find --key={ID_TRANSFER}
+```
+
+El comando anterior va a imprimir en pantalla el archivo de la transacción (que están guardados en `/tran` dentro del mismo directorio) pero por medio de un Hasheo (md5) a la hora en que se procesó. 
+
+Este archivo se puede consultar de dos formas:
+
+1. En formato *.txt en la que se expone la hora de consulta el resultado obtenido limpio.
+2. El formato *.json el cual contiene toda la información que procesó el servidor de Nemesysco y que regresó. 
+
+> Este método se va a eliminar en la siguiente distribución para solo dejar cabida a un JSON.
+
+#### `pscloud`
+
+Este es el programa principal sobre el que todo proceso corre, en un escenario simple tiene el objetivo de poder procesar solo una transacción a la vez.
+
+> En versiones anteriores este sistema es el que se ponía como daemon, sin embargo a partir del cambio de RA7 (principios de 2018) se tuvo que pasar completamente a nodejs.
+
+De aquí no hay mucho que decir más que la ventaja de realizar prebas unitarias.
+
+##### Pruebas unitarias
+
+En caso de que existan problemas internos en cuanto al procesamiento, comunicación o mal envío de correos a través del API de correos se pueden realizar pruebas unitarias para ver que está sucediendo en todo el sistema. 
+
+**Importante:** Estas pruebas reflejan su resultado en la base de datos que se está conectando.
+
+```bash
+$ ./pscloud --mode=dev -s -k -LIWM1yccPgshtXxRtNDl
+```
+
+Las opciones de este comando se pueden acceder fácilmente desde la ayuda del propio comando pero se explican brevemente acontinuación: 
+
+|Opción|Descripción|
+|---|---|
+|mode \| m | Exhibe a la terminal del usuario lo que está haciendo durante cada paso que ejecuta **(modo logger)**.|
+|single \| s | Procesa solo una transaccion y no se fija en lo que exista en el árbol por cola de procesamiento. | 
+|key \| k | Llave de la transacción a procesar. |
+
+**Importante**: Estas son opciones por lo cual es necesario que empiecen con '-'.
