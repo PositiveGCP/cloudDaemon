@@ -12,3 +12,4 @@ node/npm-*
 *.log
 **/.DS_Store
 .DS_Store
+test/bash_scripts

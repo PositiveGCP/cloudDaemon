@@ -120,11 +120,13 @@ def find(key):
         m.update(key)
         hashed = m.hexdigest()
         if os.path.isfile('./tran/' + hashed + '.txt'):
-            print "¡Eureka!"
-            print "File: %s.txt" % (hashed)
-            print "----------------------------------------------------"
+	    print "%s" % (hashed)
+            # print "¡Eureka!"
+            # print "File: %s.txt" % (hashed)
+            # print "----------------------------------------------------"
             with open('./tran/' + hashed + '.txt', 'r') as f:
-                print f.read()
+		pass
+                # print f.read()
         else:
             print "Lo siento, no existe."
     except Exception as e:
