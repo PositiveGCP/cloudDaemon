@@ -81,7 +81,7 @@ def create_transfile(uid, type_f):
 
 def system_log(task, message):
     msg = "$ [ " + task + " ] - " + message
-    print "%s" % (msg)
+    print "%s" % (message)
     with open(log_file, 'a') as out:
         out.write(msg + "\n")
         out.close()

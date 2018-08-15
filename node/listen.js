@@ -75,6 +75,9 @@ transferdb.on('child_added', function(snapshot){
     _date = data.date_inicio;
   }
 
+  console.log(["Debugging", key]);
+  
+
   if ( isNew(_date, now)) {
     if (isKeyInFile(key) != true) {
       pscloudSocket(key, now);
@@ -82,13 +85,16 @@ transferdb.on('child_added', function(snapshot){
       reportActivity(key, 1, 'COMPLETED|' + GB_COUNTER);
     }
     else{
+      console.log("Repetido");
+      
       reportActivity(key, 2, 'REPEATED');
     }
   }
   else{
     // TODO: Send mail
+    console.log("No paso ni la fecha");
     reportActivity(key, 2, 'OLD');
-    process.exit(1);
+    // process.exit(1);
   }
 
 });
@@ -110,6 +116,8 @@ function reportActivity (key, file, type) {
  * @param  {[Moment]} now [Timestamp]
  */
 function pscloudSocket (key, now) {
+  console.log("Reporting from pscloudSocket");
+  
   fs.appendFileSync(LOG_FILE, "[NEW]" + key + " | " + now.format("YY/MM/DD - HH:mm:ss Z") + "\n");
 
   console.log(key + '|' + now);
@@ -131,6 +139,7 @@ function pscloudSocket (key, now) {
 }
 
 function addToDictionary (key) {
+  console.log("Reporting from addToDictionary");
   fs.appendFileSync(DICTIONARY_FOR_KEYS, key + "\n");
 }
 
