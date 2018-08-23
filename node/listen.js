@@ -52,6 +52,7 @@ var appConfig = {
 //   storageBucket: "prot1-5db64.appspot.com",
 //   messagingSenderId: "711884414318"
 // };
+console.log("Working on: ", appConfig.projectId);
 
 var app = firebase.initializeApp(appConfig);
 var secondapp = firebase.initializeApp(appConfig, "Secondary");
