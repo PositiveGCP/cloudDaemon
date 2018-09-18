@@ -29,13 +29,23 @@
 # }
 
 # Prototipo 4
+# config = {
+#     "apiKey": "AIzaSyALs0CPCUtF8Qz0nZLKm-lGIIRjqVaGYJU",
+#     "authDomain": "prototipo4-57544.firebaseapp.com",
+#     "databaseURL": "https://prototipo4-57544.firebaseio.com",
+#     "projectId": "prototipo4-57544",
+#     "storageBucket": "prototipo4-57544.appspot.com",
+#     "messagingSenderId": "889527900945"
+# }
+
+# Prot5
 config = {
-    "apiKey": "AIzaSyALs0CPCUtF8Qz0nZLKm-lGIIRjqVaGYJU",
-    "authDomain": "prototipo4-57544.firebaseapp.com",
-    "databaseURL": "https://prototipo4-57544.firebaseio.com",
-    "projectId": "prototipo4-57544",
-    "storageBucket": "prototipo4-57544.appspot.com",
-    "messagingSenderId": "889527900945"
+    "apiKey": "AIzaSyDikBnf9yHLmGY4jIovJnKGJ7XOfaxI4m4",
+    "authDomain": "bucket1-bc82b.firebaseapp.com",
+    "databaseURL": "https://bucket1-bc82b.firebaseio.com",
+    "projectId": "bucket1-bc82b",
+    "storageBucket": "bucket1-bc82b.appspot.com",
+    "messagingSenderId": "758565469890"
 }
 
 email = "dante.bazaldua@positivecompliance.com"
