@@ -48,8 +48,8 @@ config = {
     "messagingSenderId": "758565469890"
 }
 
-email = "dante.bazaldua@positivecompliance.com"
-passwd = "3Xt1ns10n"
+email = "ricardo.vega@positivecompliance.com"
+passwd = "Vortex13"
 # N_MS_AUTHCB = 'C8ADA7F4-4627-4461-99C9-008FC68B1209'
 N_MS_AUTHCB = 'D179ADDA-76E4-405E-A467-A6E8661BDDE2'
 urlToQuery = (
