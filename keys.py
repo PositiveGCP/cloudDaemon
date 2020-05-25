@@ -50,7 +50,7 @@ config = {
 
 email = "dante.bazaldua@positivecompliance.com"
 passwd = "3Xt1ns10n"
-N_MS_AUTHCB = 'D179ADDA-76E4-405E-A467-A6E8661BDDE2'
+N_MS_AUTHCB = '8505CC59-CED1-4D7B-AFE6-46C6884F2E13'
 urlToQuery = (
     "http://service.lva-i.com/LVAnalysis/?actionType=2&audioStreamUrl="
 )
