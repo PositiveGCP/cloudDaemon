@@ -35,7 +35,7 @@ Pyrebase==3.0.27
 python-jwt==2.0.1
 requests==2.11.1
 requests-toolbelt==0.7.0
-rsa==3.4.2
+rsa==4.1
 ruamel.ordereddict==0.4.13
 ruamel.yaml==0.15.35
 six==1.10.0
